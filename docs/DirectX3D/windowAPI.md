@@ -2,7 +2,6 @@
 layout: default
 title: 0.Window API의 이해와 사용
 parent: Direct3D/X11
-has_children: true
 nav_order: 1
 ---
 
