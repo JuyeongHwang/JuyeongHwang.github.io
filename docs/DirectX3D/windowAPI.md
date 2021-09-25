@@ -5,7 +5,6 @@ parent: Direct3D/X11
 nav_order: 1
 ---
 
-# Code
 나의 경우 directX를 처음 시작할 때, 무엇을 먼저 해야할지 많이 헤맸기 때문에 시작 부분에 대해 다루고자 이 글을 쓴다.
 {: .no_toc }
 
