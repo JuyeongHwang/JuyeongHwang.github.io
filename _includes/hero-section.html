@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!ticking) {
       window.requestAnimationFrame(() => {
         const scrollY = window.scrollY;
-        const threshold = 150; // 화면의 절반 지점에서 전환
+        const threshold = 50; // 화면의 절반 지점에서 전환
 
         // ↓↓↓ 전환 로직 ↓↓↓
         if (scrollY > threshold && !changed) {
