@@ -70,3 +70,33 @@ layout: default
   </div>
 </section>
 -->
+
+<style>
+  @media (min-width: 992px) {
+    .drag-lg-top {
+      margin-top: 0 !important;
+    }
+  }
+
+  .section .row {
+    align-items: flex-start;
+  }
+
+  .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media (max-width: 991px) {
+    .col-md-4 {
+      margin-top: 20px;
+    }
+  }
+
+  /* 이미지가 너무 커서 글과 겹칠 때 */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
