@@ -84,26 +84,26 @@ infos:
 # About Page
 
 #------------------
-# mytraits-title: Traits
-# mytraits:
-#   - {
-#     name: 오픈 마인드,
-#     icon: ti-palette,
-#     description: "다양한 아이디어와 관점을 수용하여 <br> 새로운 경험과 지식을 환영합니다.",
-#     active: false, # Add true to select section
-#   }
-#   - {
-#     name: 원할한 커뮤니케이션,
-#     icon: ti-vector,
-#     description: "상대방의 의견을 경청하고 의사소통하여 <br> 목표를 이루는데 중점을 둡니다.",
-#     active: true, # Add true to select section
-#   }
-#   - {
-#     name: 배우는 자세,
-#     icon: ti-panel,
-#     description: "항상 배우는 자세를 갖추어<br>새로운 지식과 기술을 습득하려 노력합니다.",
-#     active: false, # Add true to select section
-#   }
+mytraits-title: Traits
+mytraits:
+  - {
+    name: 오픈 마인드,
+    icon: ti-palette,
+    description: "다양한 아이디어와 관점을 수용하여 <br> 새로운 경험과 지식을 환영합니다.",
+    active: false, # Add true to select section
+  }
+  - {
+    name: 원할한 커뮤니케이션,
+    icon: ti-vector,
+    description: "상대방의 의견을 경청하고 의사소통하여 <br> 목표를 이루는데 중점을 둡니다.",
+    active: true, # Add true to select section
+  }
+  - {
+    name: 배우는 자세,
+    icon: ti-panel,
+    description: "항상 배우는 자세를 갖추어<br>새로운 지식과 기술을 습득하려 노력합니다.",
+    active: false, # Add true to select section
+  }
 
 #--------------------------
 # Work Process Section 워크프로세스
