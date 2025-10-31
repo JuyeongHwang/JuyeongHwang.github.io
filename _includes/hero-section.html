@@ -2,27 +2,6 @@
 <section class="hero-area" id="parallax">
   <div class="container">
     <div class="row">
-    <img class="layer-bg2" src="{{ site.baseurl }}/assets/images/illustrations/5376728.jpg" alt="bg-shape">
-      <div class="col-lg-11 mx-auto">
-        <h1 class="text-white font-tertiary">{{ site.data.settings.hero.hero-title }}</h1>
-      </div>
-    </div>
-  </div>
-
-  <!-- social icon -->
-  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-    {% for social in site.data.settings.social %}
-    <li class="mb-3"><a class="text-white" href="{{ social.link }}"><i class="{{ social.icon }}"></i></a></li>
-    {% endfor %}
-  </ul>
-  <!-- /social icon -->
-</section>
-<!-- /hero area -->
-
-<!-- hero area -->
-<section class="hero-area" id="parallax">
-  <div class="container">
-    <div class="row">
       <img
         class="layer-bg2"
         id="hero-bg"
@@ -51,24 +30,39 @@
 <!-- 스크롤 시 배경 전환 -->
 <script>
 let changed = false;
-document.addEventListener("scroll", function () {
-  const heroImg = document.getElementById("hero-bg");
-  const scrollY = window.scrollY;
+let ticking = false; // 중복 실행 방지용
 
-  if (scrollY > 150 && !changed) {
-    heroImg.style.opacity = 0;
-    setTimeout(() => {
-      heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728_2.jpg";
-      heroImg.style.opacity = 1;
-    }, 300);
-    changed = true;
-  } else if (scrollY <= 150 && changed) {
-    heroImg.style.opacity = 0;
-    setTimeout(() => {
-      heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728_1.jpg";
-      heroImg.style.opacity = 1;
-    }, 300);
-    changed = false;
+document.addEventListener("scroll", function () {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      const heroImg = document.getElementById("hero-bg");
+      if (!heroImg) return;
+
+      const scrollY = window.scrollY;
+
+      // 스크롤 위치에 따른 전환
+      if (scrollY > 150 && !changed) {
+        changed = true;
+        heroImg.style.transition = "opacity 0.6s ease-in-out";
+        heroImg.style.opacity = 0;
+        setTimeout(() => {
+          heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728_2.jpg";
+          heroImg.style.opacity = 1;
+        }, 300);
+      } else if (scrollY <= 150 && changed) {
+        changed = false;
+        heroImg.style.transition = "opacity 0.6s ease-in-out";
+        heroImg.style.opacity = 0;
+        setTimeout(() => {
+          heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728_1.jpg";
+          heroImg.style.opacity = 1;
+        }, 300);
+      }
+
+      ticking = false;
+    });
+
+    ticking = true;
   }
 });
 </script>
