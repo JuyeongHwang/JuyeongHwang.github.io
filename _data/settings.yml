@@ -137,20 +137,19 @@ mytraits:
 #-------------------------------
 # mySkills Section 나의 스킬(커스텀)
 myskills:
-  주력 기술:
-    - icon: "assets/images/icons/unreal.svg"
-      title: 언리얼 / Unreal
-      content: 주 엔진으로 사용하고있습니다. <br> 무리없이 엔진에서 작업할수 있습니다.
-    - icon: "assets/images/icons/Cpp_Logo.svg"
-      title: C++
-      content: 언리얼 C++로 작업할 수있습니다. <br> 블루프린트 의존없이 작업할수 있습니다.
-  경험 기술:
+  Skills:
     - icon: "assets/images/icons/unity.svg"
       title: 유니티 / Unity
-      content: 부 엔진으로 여러 경험이있습니다. <br> 유니티로 프리랜싱 작업을 수행한 경험이 있습니다.
     - icon: "assets/images/icons/CS_Logo.svg"
       title: C#
-      content: 유니티 C#으로 문제없이 작업합니다. <br> 어려움없이 유니티엔진에 사용할수 있습니다.
+    - icon: "assets/images/icons/Cpp_Logo.svg"
+      title: Python
+    - icon: "assets/images/icons/unreal.svg"
+      title: 언리얼 / Unreal
+    - icon: "assets/images/icons/Cpp_Logo.svg"
+      title: C/C++
+
+
 
 #-------------------------------
 # Skills Section 나의 스킬(게이지)
