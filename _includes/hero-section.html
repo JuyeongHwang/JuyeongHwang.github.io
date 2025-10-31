@@ -18,3 +18,48 @@
   <!-- /social icon -->
 </section>
 <!-- /hero area -->
+
+<!-- hero area -->
+<section class="hero-area" id="parallax">
+  <div class="container">
+    <div class="row">
+      <img
+        class="layer-bg2"
+        id="hero-bg"
+        src="{{ site.baseurl }}/assets/images/illustrations/5376728-1.jpg"
+        alt="bg-shape"
+      />
+      <div class="col-lg-11 mx-auto">
+        <h1 class="text-white font-tertiary">{{ site.data.settings.hero.hero-title }}</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- social icon -->
+  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+    {% for social in site.data.settings.social %}
+    <li class="mb-3">
+      <a class="text-white" href="{{ social.link }}">
+        <i class="{{ social.icon }}"></i>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+<!-- /hero area -->
+
+<!-- 스크롤 시 배경 전환 -->
+<script>
+  document.addEventListener("scroll", function () {
+    const heroImg = document.getElementById("hero-bg");
+    const scrollY = window.scrollY;
+
+    if (scrollY > 150) {
+      // 일정 높이 이상 스크롤되면 2번 이미지로
+      heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728_2.jpg";
+    } else {
+      // 다시 위로 올리면 원래 이미지로
+      heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728_1.jpg";
+    }
+  });
+</script>
