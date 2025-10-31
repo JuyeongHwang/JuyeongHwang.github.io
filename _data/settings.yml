@@ -2,13 +2,13 @@
 #-------------------------------
 # General Site Settings
 
-title: 안영욱 입니다.
+title: 
 logo: 
-author: Designed & Developed by Themefisher, Modified by zombow
+# author: Designed & Developed by Themefisher, Modified by zombow
 description: Portfolio, 포트폴리오
-email: dksduddnr33@gmail.com
-phone: +82 5465 5617
-address: 경기도 고양시 일산동구 식사동 / Korea
+email: 05judy02@korea.ac.kr
+# phone: +82 2278 6072
+# address: 경기도 고양시 일산동구 식사동 / Korea
 copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com) / Modified by [zombow](https://github.com/zombow)
 
 menu:
@@ -36,7 +36,7 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: Developer <br> 안영욱 <br> Portfolio
+  hero-title: Hello, <br> I am Juyeong Hwang.
 
 social:
   - { icon: "myicon-github", link: "https://github.com/zombow" }
