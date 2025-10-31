@@ -50,16 +50,25 @@
 
 <!-- 스크롤 시 배경 전환 -->
 <script>
-  document.addEventListener("scroll", function () {
-    const heroImg = document.getElementById("hero-bg");
-    const scrollY = window.scrollY;
+let changed = false;
+document.addEventListener("scroll", function () {
+  const heroImg = document.getElementById("hero-bg");
+  const scrollY = window.scrollY;
 
-    if (scrollY > 150) {
-      // 일정 높이 이상 스크롤되면 2번 이미지로
-      heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728_2.jpg";
-    } else {
-      // 다시 위로 올리면 원래 이미지로
-      heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728_1.jpg";
-    }
-  });
+  if (scrollY > 150 && !changed) {
+    heroImg.style.opacity = 0;
+    setTimeout(() => {
+      heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728-2.jpg";
+      heroImg.style.opacity = 1;
+    }, 300);
+    changed = true;
+  } else if (scrollY <= 150 && changed) {
+    heroImg.style.opacity = 0;
+    setTimeout(() => {
+      heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728-1.jpg";
+      heroImg.style.opacity = 1;
+    }, 300);
+    changed = false;
+  }
+});
 </script>
