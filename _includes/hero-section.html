@@ -58,14 +58,14 @@ document.addEventListener("scroll", function () {
   if (scrollY > 150 && !changed) {
     heroImg.style.opacity = 0;
     setTimeout(() => {
-      heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728-2.jpg";
+      heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728_2.jpg";
       heroImg.style.opacity = 1;
     }, 300);
     changed = true;
   } else if (scrollY <= 150 && changed) {
     heroImg.style.opacity = 0;
     setTimeout(() => {
-      heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728-1.jpg";
+      heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728_1.jpg";
       heroImg.style.opacity = 1;
     }, 300);
     changed = false;
