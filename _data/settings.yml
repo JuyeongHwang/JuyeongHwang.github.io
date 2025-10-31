@@ -39,9 +39,8 @@ hero:
   hero-title: Hello, <br> I am Juyeong Hwang.
 
 social:
-  - { icon: "myicon-github", link: "https://github.com/zombow" }
-  - { icon: "myicon-velog", link: "https://velog.io/@dksduddnr33" }
-
+  - { icon: "myicon-github", link: "https://github.com/JuyeongHwang" }
+  - { icon: "ti-linkedin", link: "https://kr.linkedin.com/in/%EC%A3%BC%EC%98%81-%ED%99%A9-89b165332" }
 #-------------------------------
 # About (Section and Page)
 
