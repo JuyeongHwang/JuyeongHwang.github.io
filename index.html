@@ -1,13 +1,25 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>홍길동 | Portfolio</title>
-</head>
-<body>
-  <h1>안녕하세요 👋</h1>
-  <p>저는 컴퓨터공학과 박사과정 학생입니다.</p>
-  <p>이 페이지는 제 연구와 프로젝트를 소개합니다.</p>
-</body>
-</html>
+---
+layout: default
+---
+
+{% include hero-section.html %} <!--대제목-->
+
+{% include about-section.html %} <!--메인 나의소개-->
+
+{% include myskills-section.html %}<!--내가할수있는 기술(커스텀)-->
+
+{% include skills-section.html %} <!--내가할수있는 기술(퍼센트)-->
+
+{% include portfolio-section.html %}<!--포트폴리오-->
+
+{% include experience-section.html %} <!--이전이력-->
+
+{% include services-section.html %} <!--내가 제공하는 스킬-->
+
+{% include education-section.html %} <!--내가받은 교육-->
+
+{% include testimonial-section.html %} <!--추천서-->
+
+{% include client-section.html %} <!--내가 제공한 고객-->
+
+{% include blog-section.html %} <!--게시글-->

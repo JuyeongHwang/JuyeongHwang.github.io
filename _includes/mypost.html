@@ -1,0 +1,45 @@
+<style>
+    #feed {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* ?? ??? ???? ???? ?? */
+        gap: 50px 30px; /* row-gap? column-gap? ? ?? ?? */
+    }
+
+    #feed > div {
+        width: calc(33% - 20px);
+    }
+
+    @media screen and (max-width: 1000px) {
+        #feed > div {
+            width: calc(100% - 30px); /* ??? ??? ?, 2?? ??? ? ?? ????? ?? */
+        }
+    }
+</style>
+<article class="card shadow">
+    <div class="card-body">
+        <div id="feed"></div>
+        <script>
+            fetch('https://velogfeed.vercel.app/api/feed?username=dksduddnr33&postnum=3')
+                .then(res => res.json())
+                .then(postinfoList => {
+                    const feedElement = document.getElementById('feed');
+                    postinfoList.forEach((postinfo) => {
+                        const svg = postinfo.svg;
+                        const url = postinfo.url;
+                        const cardHtml = `
+                                    <div>
+                                        <div>
+                                            <a href="${url}" target = "_blank">
+                                                ${svg} 
+                                            </a>
+                                        </div>
+                                    </div>
+                                `;
+                        feedElement.innerHTML += cardHtml;
+                    });
+                })
+                .catch(error => console.error(error));
+        </script>
+    </div>
+</article>
