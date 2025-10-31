@@ -51,14 +51,16 @@ document.addEventListener("DOMContentLoaded", () => {
           changed = true;
           heroImg.style.opacity = 0;
           setTimeout(() => {
-            heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728_2.jpg";
+            heroImg.src = "/assets/images/illustrations/5376728_2.jpg";
+
             heroImg.style.opacity = 1;
           }, 300);
         } else if (scrollY <= threshold && changed) {
           changed = false;
           heroImg.style.opacity = 0;
           setTimeout(() => {
-            heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728_1.jpg";
+            heroImg.src = "/assets/images/illustrations/5376728_1.jpg";
+
             heroImg.style.opacity = 1;
           }, 300);
         }
