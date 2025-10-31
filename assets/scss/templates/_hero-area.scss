@@ -78,3 +78,16 @@
   overflow: hidden;
   
 }
+
+.hero-title {
+  color: #000 !important; /* hero-title을 검정으로 */
+}
+
+.hero-icon {
+  color: #000 !important; /* 아이콘을 검정으로 */
+  transition: color 0.3s ease;
+}
+
+.hero-icon:hover {
+  color: #41228E; /* hover 시 포인트 색 (보라) */
+}
