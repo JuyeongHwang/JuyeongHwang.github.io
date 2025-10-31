@@ -29,15 +29,12 @@
 
 
 <script>
-{% raw %}
 document.addEventListener("DOMContentLoaded", () => {
   const heroImg = document.getElementById("hero-bg");
   if (!heroImg) return;
 
-  // ✅ 초기 이미지 설정 (항상 보이게)
-  heroImg.src = "{{ site.baseurl }}/assets/images/illustrations/5376728_1.jpg";
-  heroImg.style.display = "block"; // 혹시 display:none 되어있을 경우
-  heroImg.style.opacity = 1;       // 반드시 보이게
+  heroImg.style.display = "block";
+  heroImg.style.opacity = 1;
   heroImg.style.transition = "opacity 0.6s ease-in-out";
 
   let changed = false;
@@ -47,9 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!ticking) {
       window.requestAnimationFrame(() => {
         const scrollY = window.scrollY;
-        const threshold = 50; // 화면의 절반 지점에서 전환
+        const threshold = window.innerHeight * 0.4; // 화면 40% 지점에서 전환
 
-        // ↓↓↓ 전환 로직 ↓↓↓
         if (scrollY > threshold && !changed) {
           changed = true;
           heroImg.style.opacity = 0;
@@ -72,5 +68,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-{% endraw %}
 </script>
