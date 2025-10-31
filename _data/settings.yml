@@ -137,17 +137,16 @@ mytraits:
 #-------------------------------
 # mySkills Section 나의 스킬(커스텀)
 myskills:
-  Skills:
-    - icon: "assets/images/icons/unity.svg"
-      title: 유니티 / Unity
-    - icon: "assets/images/icons/CS_Logo.svg"
-      title: C#
-    - icon: "assets/images/icons/Cpp_Logo.svg"
-      title: Python
-    - icon: "assets/images/icons/unreal.svg"
-      title: 언리얼 / Unreal
-    - icon: "assets/images/icons/Cpp_Logo.svg"
-      title: C/C++
+  - icon: "assets/images/icons/unity.svg"
+    title: Unity
+  - icon: "assets/images/icons/CS_Logo.svg"
+    title: C#
+  - icon: "assets/images/icons/Cpp_Logo.svg"
+    title: Python
+  - icon: "assets/images/icons/unreal.svg"
+    title: Unreal
+  - icon: "assets/images/icons/Cpp_Logo.svg"
+    title: C/C++
 
 
 
