@@ -137,7 +137,7 @@ mytraits:
 #-------------------------------
 # mySkills Section 나의 스킬(커스텀)
 myskills:
-  Language:
+  Languages:
     - icon: "assets/images/icons/unity.svg"
       title: Unity
     - icon: "assets/images/icons/CS_Logo.svg"
@@ -148,6 +148,11 @@ myskills:
       title: Unreal
     - icon: "assets/images/icons/Cpp_Logo.svg"
       title: C/C++
+  Tools:
+    - icon: "assets/images/icons/unity.svg"
+      title: Illustrate
+    - icon: "assets/images/icons/CS_Logo.svg"
+      title: Premier Pro
 
 
 
