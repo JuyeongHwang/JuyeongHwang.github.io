@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let ticking = false;
 
   window.addEventListener("scroll", () => {
+    console.log("scrollY:", window.scrollY);
     if (!ticking) {
       window.requestAnimationFrame(() => {
         const scrollY = window.scrollY;
