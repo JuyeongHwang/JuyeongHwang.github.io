@@ -1,0 +1,17 @@
+# ??? ??? ??
+/shelf/
+/workspace.xml
+
+# Rider?? ??? ??
+/projectSettingsUpdater.xml
+/modules.xml
+/.idea._layouts.iml
+/contentModel.xml
+
+# ??? ?? HTTP ????? ??
+/httpRequests/
+
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
