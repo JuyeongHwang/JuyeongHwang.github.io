@@ -208,11 +208,6 @@ a:hover {
   width: 100px;
   line-height: 100px;
   text-align: center;
-  @include desktop {
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-  }
 }
 
 .icon-light {
@@ -277,5 +272,3 @@ textarea.form-control{
   }
 }
 /* /card */
-
-

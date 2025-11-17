@@ -2,11 +2,11 @@
 layout: page
 title: Blogs
 ---
-<!-- blog --> <!--blog 페이지의 구성구역-->
+<!-- blog -->
 <section class="section">
   <div class="container">
     <div class="row">
-      {% for post in site.posts offset:0 limit:6%} <!--이 post가 읽어들인 마크다운파일-->
+      {% for post in site.posts %}
       {% include post.html %}
       {% endfor %}
     </div>
@@ -15,7 +15,6 @@ title: Blogs
 <!-- /blog -->
 
 <!-- clients -->
-<!-- 블로그 나의고객
 <section class="section bg-light">
   <div class="container">
     <div class="row">
@@ -26,5 +25,4 @@ title: Blogs
     {% include client-slider.html %}
   </div>
 </section>
--->
 <!-- /clients -->

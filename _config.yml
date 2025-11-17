@@ -1,11 +1,11 @@
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://juyeonghwang.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
 # Build settings
 markdown: kramdown
 permalink: pretty
 plugins:
   - jekyll-sitemap
-
 compress_html:
   clippings: all
   comments: all
@@ -17,7 +17,7 @@ defaults:
       path: "_pages"
     values:
       permalink: /:basename:output_ext
-  
+
 include:
   - _pages
 
