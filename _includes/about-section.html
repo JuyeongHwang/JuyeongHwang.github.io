@@ -1,12 +1,30 @@
 <!-- about -->
-<section class="section">
+<!--<section class="section">-->
+<!--  <div class="container">-->
+<!--    <div class="row">-->
+<!--      <div class="col-lg-10 mx-auto text-center">-->
+<!--        <p class="font-secondary paragraph-lg text-dark">{{ site.data.settings.blurb }}</p>-->
+<!--        <a href="{{ site.data.settings.blurb-btn-link }}" class="btn btn-transparent">{{ site.data.settings.blurb-btn-name }}</a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<section id="about" class="section">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <p class="font-secondary paragraph-lg text-dark">{{ site.data.settings.blurb }}</p>
-        <a href="{{ site.data.settings.blurb-btn-link }}" class="btn btn-transparent">{{ site.data.settings.blurb-btn-name }}</a>
+    <div class="row align-items-center">
+      <!-- Left: Image -->
+      <div class="col-md-6 text-center">
+        {% if site.blurb-image %}
+        <img src="{{ site.blurb-image | prepend: site.baseurl }}" alt="About Image" class="img-fluid rounded shadow-sm">
+        {% endif %}
+      </div>
+      <!-- Right: Text -->
+      <div class="col-md-6">
+        <h2>{{ site.blurb }}</h2>
+        <a href="{{ site.blurb-btn-link }}" class="btn btn-primary">{{ site.blurb-btn-name }}</a>
       </div>
     </div>
   </div>
 </section>
+
 <!-- /about -->
