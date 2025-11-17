@@ -1,0 +1,13 @@
+# ??? ??? ??
+/shelf/
+/workspace.xml
+# Rider?? ??? ??
+/contentModel.xml
+/.idea.zombow.github.io.iml
+/projectSettingsUpdater.xml
+/modules.xml
+# ??? ?? HTTP ????? ??
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
