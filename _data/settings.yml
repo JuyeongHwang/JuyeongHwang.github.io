@@ -86,8 +86,12 @@ patient:
 awards-title: Awards
 awards:
 - {
-    name-kor: "2025 KCGS 우수논문상 우수상",
-    description: '"전문가 혼합 구조를 활용한 텍스트 기반 3D 모션 생성 성능 향상 연구"'
+  name-kor: "2023 소프트웨어페스티벌 우수상",
+  description: ""
+}
+- {
+    name-kor: "2020 KHUTHON 최우수상",
+    description: ""
   }
 
 #-------------------------------
