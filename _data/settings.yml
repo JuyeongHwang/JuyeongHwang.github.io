@@ -28,7 +28,7 @@ social:
 # About (Section and Page)
 
 # About Section
-blurb: <li>나만의 속도로 꾸준히 노력하기</li><li>현실에 안주하기</li><li>행복한 삶을 살기</li>
+blurb: <li>Keep making steady efforts at my own pace</li><li>Do not settle for the present</li><li>Live a happy life</li>
 
 blurb-btn-link: "/about"
 blurb-btn-name: know more
@@ -39,16 +39,16 @@ blurb-btn-name: know more
 education-title: Education
 education:
   - {
-      name: 경희대학교 소프트웨어융합학과 학사,
+      name: B.S. in Software Convergence,
       url: "",
-      date: "2019.03~2023.08",
-      organization: "B.S. in Software Convergence, <br> Kyung Hee University",
+      date: "Mar. 2019 ~ Aug. 2023",
+      organization: "Department of Software Convergence, <br> Kyung Hee University",
     }
   - {
-      name: 고려대학교 컴퓨터학과 석박통합과정,
+      name: Integrated M.S./Ph.D. in Computer Science,
       url: "",
-      date: "2023.08~",
-      organization: "Ph.D. in Computer Science, <br> Korea University",
+      date: "Aug. 2023 ~",
+      organization: "School of Computer Science and Engineering, <br> Korea University",
     }
 
 #-------------------------------
@@ -58,13 +58,13 @@ pubs:
 - {
     title-kor: "BiPO: Bidirectional Partial Occlusion Network for Text-to-Motion Synthesis",
     authors: "Seong-Eun Hong, Soobin Lim, <b>Juyeong Hwang</b>, Minwook Chang, HyeongYeop Kang†",
-    conference: "The IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), Mar, 6-10 2026, Tucson, Arizona, United States",
+    conference: "The IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), Mar. 6–10 2026, Tucson, Arizona, United States",
     url: "https://doi.org/10.48550/arXiv.2412.00112"
   }
 - {
     title-kor: "How Does a Virtual Agent Decide Where to Look? Symbolic Cognitive Reasoning for Embodied Head Rotation",
     authors: "<b>Juyeong Hwang<sup>1</sup></b>, Seong-Eun Hong<sup>1</sup>, JaeYoung Seon, HyeongYeop Kang*",
-    conference: "ACM SIGGRAPH Asia, Dec. 15-18 2025, Hong Kong",
+    conference: "ACM SIGGRAPH Asia, Dec. 15–18 2025, Hong Kong",
     url: "https://arxiv.org/pdf/2508.08930"
     # url: "https://doi.org/10.1145/3757377.3763849"
   }
@@ -74,23 +74,23 @@ patient-title: Patents
 
 patient:
   - {
-      name-kor: "가상 에이전트의 일일 활동 계획 생성 시스템 및 이의 동작 방법",
-      description: "간단한 설명 텍스트"
+      name-kor: "System and method for generating daily activity plans for virtual agents",
+      description: "Brief description text"
     }
   - {
-      name-kor: "인지 기반 에이전트의 시선에 따른 머리 회전 결정 방법 및 이를 수행하는 시스템",
-      description: "또 다른 설명 텍스트"
+      name-kor: "Method and system for determining head rotation based on gaze of a cognitive agent",
+      description: "Another brief description text"
     }
 #-------------------------------
 # Awards Section
 awards-title: Awards
 awards:
 - {
-  name-kor: "2023 소프트웨어페스티벌 우수상",
+  name-kor: "2023 Software Festival, Excellence Award",
   description: "."
 }
 - {
-    name-kor: "2020 KHUTHON 최우수상",
+    name-kor: "2020 KHUTHON, Grand Prize",
     description: " "
   }
 
@@ -131,25 +131,25 @@ experience:
   - {
       name: KIST,
       icon: "kist.png",
-      date: "2022.06~2022.08",
-      organization: "KIST",
+      date: "Jun. 2022 ~ Aug. 2022",
+      organization: "Korea Institute of Science and Technology (KIST)",
     }
   - {
       name: Researcher,
       icon: "iiixr.png",
-      date: "2022.11~",
+      date: "Nov. 2022 ~",
       organization: "IIIXR LAB",
     }
   - {
     name: NC Fellowship,
     icon: "ncsoft.png",
-    date: "2023.01~2023.02",
+    date: "Jan. 2023 ~ Feb. 2023",
     organization: "NCSOFT",
   }
   - {
-      name: 펄어비스X경희소융<br>인재양성 프로그램,
+      name: Pearl Abyss X Kyung Hee Univ. SW Convergence Talent Training Program,
       icon: "pearl_abyss.png",
-      date: "2022.09~2023.01",
+      date: "Sep. 2022 ~ Jan. 2023",
       organization: "Pearl Abyss",
     }
 
@@ -162,16 +162,16 @@ portfolio-home-items:
       name: UNTACT,
       image: "assets/images/portfolio/portfolio_1.png",
       url: "https://github.com/CompileBlue/UNTACT_SurvivalGame",
-      description: Unity / 2D / 생존
+      description: Unity / 2D / Survival
     }
   - {
     name: NUCLAIN,
     image: "assets/images/portfolio/portfolio_2.png",
     url: "https://www.youtube.com/watch?v=VCABVM0x_VI&list=PL9EsG3LxiqRlG40YvzqvrN4Lj__fayzKn",
-    description: Unreal / 3D / 생존
+    description: Unreal / 3D / Survival
   }
   - {
-    name: 전문가 혼합 구조를 활용한 텍스트 기반 3D 모션 생성 성능 향상 연구,
+    name: Performance improvement of text-based 3D motion generation using a mixture-of-experts architecture,
     image: "assets/images/portfolio/portfolio_9.png",
     url: "https://doi.org/10.15701/kcgs.2025.31.3.109",
     description: Character Animation / Text to Motion
@@ -182,48 +182,48 @@ portfolio-btn-name: know more
 
 # Portfolio Page
 portfolio-label:
-  - { title: "게임 개발", type: "game" }
-  - { title: "프로젝트", type: "project" }
-  - { title: "연구", type: "research" }
+  - { title: "Game Development", type: "game" }
+  - { title: "Projects", type: "project" }
+  - { title: "Research", type: "research" }
 
 portfolio-items:
-  - name: LOL 하이라이트 추출기
+  - name: LoL Highlight Extractor
     portfolio-type:
       - type: "project"
     image: "assets/images/portfolio/portfolio_3.png"
     url: "https://github.com/SWTube/LoL-eSports-Highlight-Extractor"
-    description: Python / 데이터분석
+    description: Python / Data Analysis
   - name: UNTACT
     portfolio-type:
       - type: "game"
     image: "assets/images/portfolio/portfolio_1.png"
     url: "https://github.com/CompileBlue/UNTACT_SurvivalGame"
-    description: Unity / 2D / 생존
-  - name: 게임 엔진 개발
+    description: Unity / 2D / Survival
+  - name: Game Engine Development
     portfolio-type:
       - type: "project"
     image: "assets/images/portfolio/portfolio_4.png"
     url: "https://github.com/SWTube/Darkest-Cave"
-    description: C++ / 게임엔진
+    description: C++ / Game Engine
   - name: NUCLAIN
     portfolio-type:
       - type: "game"
     image: "assets/images/portfolio/portfolio_2.png"
     url: "https://www.youtube.com/watch?v=VCABVM0x_VI&list=PL9EsG3LxiqRlG40YvzqvrN4Lj__fayzKn"
-    description: Unreal / 3D / 생존
+    description: Unreal / 3D / Survival
   - name: Image to 3D mesh
     portfolio-type:
       - type: "research"
     image: "assets/images/portfolio/portfolio_6.png"
     url: "https://www.youtube.com/watch?v=GLTibic-gIE&list=PL9EsG3LxiqRn1NAcdW1XBsDpuKWblhFHi"
-    description: Pytorch / Deep Learning
+    description: PyTorch / Deep Learning
   - name: DX11 Programming
     portfolio-type:
       - type: "project"
     image: "assets/images/portfolio/portfolio_5.png"
     url: "https://github.com/tjswodud/GameGraphicProgramming_2020105708_JaeYoungSeon"
-    description: C++ / DirectX / 그래픽스
-  - name: NSM을 통한 액션 게임 개발
+    description: C++ / DirectX / Graphics
+  - name: Action Game Development using NSM
     portfolio-type:
       - type: "research"
     image: "assets/images/portfolio/portfolio_7.png"
@@ -235,7 +235,7 @@ portfolio-items:
     image: "assets/images/portfolio/portfolio_8.png"
     url: "https://www.youtube.com/watch?v=SGoXMTo-asY"
     description: Character Animation / Deep Learning
-  - name: 전문가 혼합 구조를 활용한 텍스트 기반 3D 모션 생성 성능 향상 연구
+  - name: Performance improvement of text-based 3D motion generation using a mixture-of-experts architecture
     portfolio-type:
       - type: "research"
     image: "assets/images/portfolio/portfolio_9.png"
