@@ -97,5 +97,26 @@
   font-size: 32px;
   color: #007bff;
 }
+
+/* 모바일에서 수직 레이아웃으로 변경 */
+@media (max-width: 767.98px) {
+  .education-timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-line,
+  .timeline-arrow {
+    display: none;
+  }
+
+  .education-icon {
+    margin-bottom: 1.5rem;
+  }
+
+  .edu-bg-image {
+    margin-top: 2rem;
+  }
+}
 </style>
 {% endif %}
