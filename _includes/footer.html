@@ -1,0 +1,35 @@
+<!-- footer -->
+<footer class="bg-dark footer-section">
+  <!-- <div class="text-center">
+    <h2 class="text-white font-primary">Contact</h2>
+  </div> -->
+  <div class="section">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.email }}</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">GitHub</h5>
+          <a href="{{ site.data.settings.github }}" target="_blank" class="paragraph-lg font-secondary">
+            {{ site.data.settings.github }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">{{site.data.settings.copyright | markdownify}}</p>
+  </div>
+</footer>
+<!-- /footer -->
+
+
+<!-- JS Plugins -->
+{% for js in site.data.plugins.js %}
+<script src="{{ js | relative_url }}"></script>
+{% endfor %}
+
+<!-- Main Script -->
+<script src="{{ '/assets/js/script.js' | relative_url }}"></script>

@@ -1,0 +1,231 @@
+---
+#-------------------------------
+# General Site Settings
+
+title: JaeYoung Seon
+logo:
+author: tjswodud
+description: this is meta description
+email: tjswodud85@gmail.com
+github: https://github.com/tjswodud
+# phone: +880 2544 658 256
+# address: 125/A, CA Commercial Area, California, USA
+copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com) / Modified by [tjswodud](https://github.com/tjswodud)
+
+menu:
+  - { name: About, link: "/about" }
+  - { name: Portfolio, link: "/portfolio" }
+  - { name: CV, link: "/cv" }
+
+#-------------------------------
+# Hero Section
+
+social:
+  - { icon: "ti-github", link: "https://github.com/tjswodud" }
+  - { icon: "ti-linkedin", link: "https://www.linkedin.com/in/jaeyoung-seon-991625298"}
+
+#-------------------------------
+# About (Section and Page)
+
+# About Section
+blurb: <li>나만의 속도로 꾸준히 노력하기</li><li>현실에 안주하기 않기</li><li>행복한 삶을 살기</li>
+
+blurb-btn-link: "/about"
+blurb-btn-name: know more
+
+#-------------------------------
+# Education Section
+
+education-title: Education
+education:
+  - {
+      name: 경희대학교 소프트웨어융합학과 학사,
+      url: "",
+      date: "2020.03~2024.02",
+      organization: "B.S. in Software Convergence, <br> Kyung Hee University",
+    }
+  - {
+      name: 경희대학교 인공지능학과 석사과정,
+      url: "",
+      date: "2024.03~",
+      organization: "M.S. in Artificial Intelligence, <br> Kyung Hee University",
+    }
+
+#-------------------------------
+# Publication Section
+pubs-title: Publication
+pubs:
+- {
+    title-kor: "Text-based 3D Motion Generation with a Mixture of Experts for Enhancing Performance",
+    authors: "<b>JaeYoung Seon<sup>1</sup></b>, Seong-Eun Hong, KyeongMin Kim, SeungWoo Woo, Hyoseok Hwang†, HyeongYeop Kang†",
+    conference: "Korea Computer Graphics Society (KCGS), Vol. 31, No. 3, p.109-117",
+    url: "https://doi.org/10.15701/kcgs.2025.31.3.109"
+  }
+- {
+    title-kor: "How Does a Virtual Agent Decide Where to Look? Symbolic Cognitive Reasoning for Embodied Head Rotation",
+    authors: "Juyeong Hwang<sup>1</sup>, Seong-Eun Hong<sup>1</sup>, <b>JaeYoung Seon</b>, HyeongYeop Kang*",
+    conference: "ACM SIGGRAPH Asia, Dec. 15-18 2025, Hong Kong",
+    url: "https://arxiv.org/pdf/2508.08930"
+    # url: "https://doi.org/10.1145/3757377.3763849"
+  }
+
+#-------------------------------
+# Awards Section
+awards-title: Awards
+awards:
+- {
+    name-kor: "2025 KCGS 우수논문상 우수상",
+    description: '"전문가 혼합 구조를 활용한 텍스트 기반 3D 모션 생성 성능 향상 연구"'
+  }
+
+#-------------------------------
+# Skills Section
+
+skills-title: Skills
+skills:
+  engines:
+    - {
+        name: Unreal Engine,
+        icon: "unreal.png",
+      }
+    - {
+        name: Unity,
+        icon: "unity.png",
+      }
+  languages:
+    - {
+        name: Python,
+        icon: "python.png",
+      }
+    - {
+        name: C++,
+        icon: "cpp.png",
+      }
+    - {
+        name: C#,
+        icon: "csharp.png",
+      }
+
+#-------------------------------
+# Exprerience Section
+
+experience-title: Experiences
+experience:
+  - {
+      name: NC Fellowship,
+      icon: "ncsoft.png",
+      date: "2023.01~2023.02",
+      organization: "NCSOFT",
+    }
+  - {
+      name: Researcher,
+      icon: "iiixr.png",
+      date: "2023.06~",
+      organization: "IIIXR LAB",
+    }
+  - {
+      name: 펄어비스X경희소융<br>인재양성 프로그램,
+      icon: "pearl_abyss.png",
+      date: "2023.03~2023.07",
+      organization: "Pearl Abyss",
+    }
+  - {
+      name: Research Intern,
+      icon: "ncsoft.png",
+      date: "2024.06~2024.08",
+      organization: "NCSOFT",
+    }
+
+#-------------------------------
+# Portfolio (Section and Page)
+
+# Portfolio Home Section
+portfolio-home-items:
+  - {
+      name: UNTACT,
+      image: "assets/images/portfolio/portfolio_1.png",
+      url: "https://github.com/CompileBlue/UNTACT_SurvivalGame",
+      description: Unity / 2D / 생존
+    }
+  - {
+    name: NUCLAIN,
+    image: "assets/images/portfolio/portfolio_2.png",
+    url: "https://www.youtube.com/watch?v=VCABVM0x_VI&list=PL9EsG3LxiqRlG40YvzqvrN4Lj__fayzKn",
+    description: Unreal / 3D / 생존
+  }
+  - {
+    name: 전문가 혼합 구조를 활용한 텍스트 기반 3D 모션 생성 성능 향상 연구,
+    image: "assets/images/portfolio/portfolio_9.png",
+    url: "https://doi.org/10.15701/kcgs.2025.31.3.109",
+    description: Character Animation / Text to Motion
+  }
+
+portfolio-link: /portfolio
+portfolio-btn-name: know more
+
+# Portfolio Page
+portfolio-label:
+  - { title: "게임 개발", type: "game" }
+  - { title: "프로젝트", type: "project" }
+  - { title: "연구", type: "research" }
+
+portfolio-items:
+  - name: LOL 하이라이트 추출기
+    portfolio-type:
+      - type: "project"
+    image: "assets/images/portfolio/portfolio_3.png"
+    url: "https://github.com/SWTube/LoL-eSports-Highlight-Extractor"
+    description: Python / 데이터분석
+  - name: UNTACT
+    portfolio-type:
+      - type: "game"
+    image: "assets/images/portfolio/portfolio_1.png"
+    url: "https://github.com/CompileBlue/UNTACT_SurvivalGame"
+    description: Unity / 2D / 생존
+  - name: 게임 엔진 개발
+    portfolio-type:
+      - type: "project"
+    image: "assets/images/portfolio/portfolio_4.png"
+    url: "https://github.com/SWTube/Darkest-Cave"
+    description: C++ / 게임엔진
+  - name: NUCLAIN
+    portfolio-type:
+      - type: "game"
+    image: "assets/images/portfolio/portfolio_2.png"
+    url: "https://www.youtube.com/watch?v=VCABVM0x_VI&list=PL9EsG3LxiqRlG40YvzqvrN4Lj__fayzKn"
+    description: Unreal / 3D / 생존
+  - name: Image to 3D mesh
+    portfolio-type:
+      - type: "research"
+    image: "assets/images/portfolio/portfolio_6.png"
+    url: "https://www.youtube.com/watch?v=GLTibic-gIE&list=PL9EsG3LxiqRn1NAcdW1XBsDpuKWblhFHi"
+    description: Pytorch / Deep Learning
+  - name: DX11 Programming
+    portfolio-type:
+      - type: "project"
+    image: "assets/images/portfolio/portfolio_5.png"
+    url: "https://github.com/tjswodud/GameGraphicProgramming_2020105708_JaeYoungSeon"
+    description: C++ / DirectX / 그래픽스
+  - name: NSM을 통한 액션 게임 개발
+    portfolio-type:
+      - type: "research"
+    image: "assets/images/portfolio/portfolio_7.png"
+    url: "https://www.youtube.com/watch?v=idu3chKBKAs"
+    description: Unity / Deep Learning
+  - name: Realistic Character Control<br>using Motion VAE
+    portfolio-type:
+      - type: "research"
+    image: "assets/images/portfolio/portfolio_8.png"
+    url: "https://www.youtube.com/watch?v=SGoXMTo-asY"
+    description: Character Animation / Deep Learning
+  - name: 전문가 혼합 구조를 활용한 텍스트 기반 3D 모션 생성 성능 향상 연구
+    portfolio-type:
+      - type: "research"
+    image: "assets/images/portfolio/portfolio_9.png"
+    url: "https://doi.org/10.15701/kcgs.2025.31.3.109"
+    description: Character Animation / Text to Motion
+
+#-------------------------------
+# CV (Section and Page)
+
+cv-link: /cv

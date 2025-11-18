@@ -1,0 +1,36 @@
+<!-- hero area -->
+<section class="hero-area bg-primary" id="parallax" style="padding-bottom:20px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-11 mx-auto">
+        <p>
+          <h1 class="text-white font-tertiary">안녕하세요.</h1>
+          <h3 class="text-white font-tertiary">Hello.</h3>
+          <h1 class="text-white font-tertiary">선재영 입니다.</h1>
+          <h3 class="text-white font-tertiary">I'm JaeYoung Seon.</h3>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- social icon -->
+  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+    {% for social in site.data.settings.social %}
+    <li class="mb-3"><a class="text-white" href="{{ social.link }}" target="_blank"><i class="{{ social.icon }}"></i></a></li>
+    {% endfor %}
+  </ul>
+  <!-- /social icon -->
+</section>
+<!-- /hero area -->
+
+<style>
+/* ✅ 아이콘 크기 조정 */
+.hero-area ul li i {
+  font-size: 1.6rem;   /* 기본은 보통 1rem~1.2rem, 살짝 키움 */
+  transition: transform 0.2s ease;
+}
+
+/* 선택적으로 호버 시 확대 효과 */
+.hero-area ul li i:hover {
+  transform: scale(1.15);
+}
+</style>

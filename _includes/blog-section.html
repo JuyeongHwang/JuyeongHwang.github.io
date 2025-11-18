@@ -1,0 +1,17 @@
+<!-- blog -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Blogs</h2>
+      </div>
+      {% for post in site.posts offset:0 limit:3 %}
+      {% include post.html %}
+      {% endfor %}
+    </div>
+    <div class="col-lg-10 mx-auto text-center">
+      <a href="/blog" class="btn btn-primary" style="padding-top:8px; padding-bottom:8px;">View More</a>
+    </div>
+  </div>
+</section>
+<!-- /blog -->
