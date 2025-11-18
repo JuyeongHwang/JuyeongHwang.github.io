@@ -6,7 +6,7 @@
       <div class="col-lg-11 mx-auto">
         <p>
           <h3 class="text-white font-tertiary">Hello.</h3>
-          <h3 class="text-white font-tertiary">I'm JuYeong Seon.</h3>
+          <h3 class="text-white font-tertiary">I'm JuYeong Hwang. </h3>
         </p>
       </div>
     </div>
@@ -22,17 +22,21 @@
 <!-- /hero area -->
 
 <style>
+.hero-area {
+  position: relative;
+  min-height: 100vh; /* 화면 한 페이지 꽉 채우고 싶으면 유지, 아니면 이 줄 삭제 */
 
-  .hero-area {
-position: relative;
-/* 화면 높이 꽉 채우고 싶으면 */
-min-height: 100vh;
+  background-image: url("{{ site.baseurl }}/assets/images/backgrounds/여울너굴배경.png");
+  background-size: cover;      /* 영역을 꽉 채우게 */
+  background-position: center; /* 가운데 기준으로 자르기 */
+  background-repeat: no-repeat;
+}
 
-/* 배경 이미지 꽉 채우기 */
-background-image: url("{{ site.baseurl }}/assets/images/backgrounds/여울너굴배경.png");
-background-size: cover;     /* 영역을 꽉 채우도록 */
-background-position: center;/* 가운데 정렬 */
-background-repeat: no-repeat;
+/* 텍스트랑 아이콘이 배경 위에 보이도록 */
+.hero-area .container,
+.hero-area ul {
+  position: relative;
+  z-index: 1;
 }
 
 /* ✅ 아이콘 크기 조정 */
