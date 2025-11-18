@@ -127,29 +127,30 @@ skills:
 
 experience-title: Experiences
 experience:
+
   - {
-      name: NC Fellowship,
-      icon: "ncsoft.png",
-      date: "2023.01~2023.02",
-      organization: "NCSOFT",
+      name: KIST,
+      icon: "kist.png",
+      date: "2022.06~2022.08",
+      organization: "KIST",
     }
   - {
       name: Researcher,
       icon: "iiixr.png",
-      date: "2023.06~",
+      date: "2022.11~",
       organization: "IIIXR LAB",
     }
   - {
+    name: NC Fellowship,
+    icon: "kist.png",
+    date: "2023.01~2023.02",
+    organization: "NCSOFT",
+  }
+  - {
       name: 펄어비스X경희소융<br>인재양성 프로그램,
       icon: "pearl_abyss.png",
-      date: "2023.03~2023.07",
+      date: "2022.09~2023.01",
       organization: "Pearl Abyss",
-    }
-  - {
-      name: Research Intern,
-      icon: "ncsoft.png",
-      date: "2024.06~2024.08",
-      organization: "NCSOFT",
     }
 
 #-------------------------------
