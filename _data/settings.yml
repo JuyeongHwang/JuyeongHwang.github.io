@@ -142,7 +142,7 @@ experience:
     }
   - {
     name: NC Fellowship,
-    icon: "kist.png",
+    icon: "ncsoft.png",
     date: "2023.01~2023.02",
     organization: "NCSOFT",
   }
