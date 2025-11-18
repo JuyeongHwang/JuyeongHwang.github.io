@@ -2,12 +2,12 @@
 #-------------------------------
 # General Site Settings
 
-title: JaeYoung Seon
+title: JuYeong Hwang
 logo:
-author: tjswodud
+author: JuyeongHwang
 description: this is meta description
-email: tjswodud85@gmail.com
-github: https://github.com/tjswodud
+email: 05judy02[at.]gmail.com
+github: https://github.com/JuyeongHwang
 # phone: +880 2544 658 256
 # address: 125/A, CA Commercial Area, California, USA
 copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com) / Modified by [tjswodud](https://github.com/tjswodud)
@@ -41,14 +41,14 @@ education:
   - {
       name: 경희대학교 소프트웨어융합학과 학사,
       url: "",
-      date: "2020.03~2024.02",
+      date: "2019.03~2023.08",
       organization: "B.S. in Software Convergence, <br> Kyung Hee University",
     }
   - {
-      name: 경희대학교 인공지능학과 석사과정,
+      name: 고려대학교 컴퓨터학과 석박통합과정,
       url: "",
-      date: "2024.03~",
-      organization: "M.S. in Artificial Intelligence, <br> Kyung Hee University",
+      date: "2023.08~",
+      organization: "Ph.D. in Computer Science, <br> Korea University",
     }
 
 #-------------------------------
@@ -56,14 +56,14 @@ education:
 pubs-title: Publication
 pubs:
 - {
-    title-kor: "Text-based 3D Motion Generation with a Mixture of Experts for Enhancing Performance",
-    authors: "<b>JaeYoung Seon<sup>1</sup></b>, Seong-Eun Hong, KyeongMin Kim, SeungWoo Woo, Hyoseok Hwang†, HyeongYeop Kang†",
-    conference: "Korea Computer Graphics Society (KCGS), Vol. 31, No. 3, p.109-117",
-    url: "https://doi.org/10.15701/kcgs.2025.31.3.109"
+    title-kor: "BiPO: Bidirectional Partial Occlusion Network for Text-to-Motion Synthesis",
+    authors: "Seong-Eun Hong, Soobin Lim, <br>Juyeong Hwang</br>, Minwook Chang, HyeongYeop Kang†",
+    conference: "The IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), Mar, 6-10 2026, Tucson, Arizona, United States",
+    url: "https://doi.org/10.48550/arXiv.2412.00112"
   }
 - {
     title-kor: "How Does a Virtual Agent Decide Where to Look? Symbolic Cognitive Reasoning for Embodied Head Rotation",
-    authors: "Juyeong Hwang<sup>1</sup>, Seong-Eun Hong<sup>1</sup>, <b>JaeYoung Seon</b>, HyeongYeop Kang*",
+    authors: "<b>Juyeong Hwang<sup>1</sup></b>, Seong-Eun Hong<sup>1</sup>, JaeYoung Seon, HyeongYeop Kang*",
     conference: "ACM SIGGRAPH Asia, Dec. 15-18 2025, Hong Kong",
     url: "https://arxiv.org/pdf/2508.08930"
     # url: "https://doi.org/10.1145/3757377.3763849"
