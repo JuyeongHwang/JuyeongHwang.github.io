@@ -57,7 +57,7 @@ pubs-title: Publication
 pubs:
 - {
     title-kor: "BiPO: Bidirectional Partial Occlusion Network for Text-to-Motion Synthesis",
-    authors: "Seong-Eun Hong, Soobin Lim, <br>Juyeong Hwang</br>, Minwook Chang, HyeongYeop Kang†",
+    authors: "Seong-Eun Hong, Soobin Lim, <b>Juyeong Hwang</b>, Minwook Chang, HyeongYeop Kang†",
     conference: "The IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), Mar, 6-10 2026, Tucson, Arizona, United States",
     url: "https://doi.org/10.48550/arXiv.2412.00112"
   }

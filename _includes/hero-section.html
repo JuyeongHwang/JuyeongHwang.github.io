@@ -2,7 +2,7 @@
 <section class="hero-area bg-primary" id="parallax" style="padding-bottom:20px;">
   <div class="container">
     <div class="row">
-      <img class="layer-bg2" src="{{ site.baseurl }}/assets/images/backgrounds/여울너굴배경.png" alt="bg-shape">
+<!--      <img class="layer-bg2" src="{{ site.baseurl }}/assets/images/backgrounds/여울너굴배경.png" alt="bg-shape">-->
       <div class="col-lg-11 mx-auto">
         <p>
           <h3 class="text-white font-tertiary">Hello.</h3>
@@ -22,6 +22,19 @@
 <!-- /hero area -->
 
 <style>
+
+  .hero-area {
+position: relative;
+/* 화면 높이 꽉 채우고 싶으면 */
+min-height: 100vh;
+
+/* 배경 이미지 꽉 채우기 */
+background-image: url("{{ site.baseurl }}/assets/images/backgrounds/여울너굴배경.png");
+background-size: cover;     /* 영역을 꽉 채우도록 */
+background-position: center;/* 가운데 정렬 */
+background-repeat: no-repeat;
+}
+
 /* ✅ 아이콘 크기 조정 */
 .hero-area ul li i {
   font-size: 1.6rem;   /* 기본은 보통 1rem~1.2rem, 살짝 키움 */
