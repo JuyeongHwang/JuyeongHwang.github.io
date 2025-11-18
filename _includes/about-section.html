@@ -6,15 +6,34 @@
         <h2 class="section-title">Profile</h2>
       </div>
     </div>
+<!--    <div class="row justify-content-center align-items-center">-->
+<!--      <div class="col-4 text-center">-->
+<!--        <img src="{{ site.baseurl }}/assets/images/about/profile.jpg" style="width: 200px; height: auto; border: 8px solid #155E95; border-radius: 10%;">-->
+<!--      </div>-->
+<!--      <div class="col-4">-->
+<!--        <p class="font-secondary paragraph-lg text-dark">✅ 나만의 속도로 꾸준히 노력하기<br>✅ 현실에 안주하기<br>✅ 행복한 삶을 살기</p>-->
+<!--        <a href="/about" class="btn btn-primary" style="padding-top:8px; padding-bottom:8px;">View More</a>-->
+<!--      </div>-->
+<!--    </div>-->
     <div class="row justify-content-center align-items-center">
-      <div class="col-4 text-center">
-        <img src="{{ site.baseurl }}/assets/images/about/profile.jpg" style="width: 200px; height: auto; border: 8px solid #155E95; border-radius: 10%;">
-      </div>
-      <div class="col-4">
-        <p class="font-secondary paragraph-lg text-dark">✅ 나만의 속도로 꾸준히 노력하기<br>✅ 현실에 안주하기<br>✅ 행복한 삶을 살기</p>
-        <a href="/about" class="btn btn-primary" style="padding-top:8px; padding-bottom:8px;">View More</a>
-      </div>
-    </div>
+  <!-- 이미지: 모바일에서는 전체 폭(col-12), md 이상에서만 4칸 -->
+  <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+    <img src="{{ site.baseurl }}/assets/images/about/profile.jpg"
+         class="img-fluid"
+         style="max-width: 200px; width: 100%; height: auto; border: 8px solid #155E95; border-radius: 10%;">
+  </div>
+
+  <!-- 텍스트: 마찬가지로 col-12 + col-md-4 -->
+  <div class="col-12 col-md-4">
+    <p class="font-secondary paragraph-lg text-dark">
+      ✅ 나만의 속도로 꾸준히 노력하기<br>
+      ✅ 현실에 안주하기<br>
+      ✅ 행복한 삶을 살기
+    </p>
+    <a href="/about" class="btn btn-primary" style="padding-top:8px; padding-bottom:8px;">View More</a>
+  </div>
+</div>
+
   </div>
 </section>
 <!-- /about -->
