@@ -87,11 +87,11 @@ awards-title: Awards
 awards:
 - {
   name-kor: "2023 소프트웨어페스티벌 우수상",
-  description: ""
+  description: "."
 }
 - {
     name-kor: "2020 KHUTHON 최우수상",
-    description: ""
+    description: " "
   }
 
 #-------------------------------
