@@ -68,8 +68,19 @@ pubs:
     url: "https://arxiv.org/pdf/2508.08930"
     # url: "https://doi.org/10.1145/3757377.3763849"
   }
+#-------------------------------
+# Patient Section
+patient-title: Patient
 
-
+patient:
+  - {
+      name-kor: "예시 환자 A",
+      description: "간단한 설명 텍스트"
+    }
+  - {
+      name-kor: "예시 환자 B",
+      description: "또 다른 설명 텍스트"
+    }
 #-------------------------------
 # Awards Section
 awards-title: Awards
