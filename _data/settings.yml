@@ -21,14 +21,14 @@ menu:
 # Hero Section
 
 social:
-  - { icon: "ti-github", link: "https://github.com/tjswodud" }
-  - { icon: "ti-linkedin", link: "https://www.linkedin.com/in/jaeyoung-seon-991625298"}
+  - { icon: "ti-github", link: "https://github.com/JuyeongHwang" }
+  - { icon: "ti-linkedin", link: "https://www.linkedin.com/in/주영-황-89b165332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}
 
 #-------------------------------
 # About (Section and Page)
 
 # About Section
-blurb: <li>나만의 속도로 꾸준히 노력하기</li><li>현실에 안주하기 않기</li><li>행복한 삶을 살기</li>
+blurb: <li>나만의 속도로 꾸준히 노력하기</li><li>현실에 안주하기</li><li>행복한 삶을 살기</li>
 
 blurb-btn-link: "/about"
 blurb-btn-name: know more
