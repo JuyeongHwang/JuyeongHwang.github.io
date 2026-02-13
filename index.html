@@ -1,27 +1,862 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-{% include hero-section.html %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Seong-Eun Hong - Graphics Researcher at Korea University | Computer Graphics, Motion Synthesis, and AI">
+    <meta name="keywords"
+        content="Graphics, Computer Vision, Research, AI, Deep Learning, Motion Synthesis, Text-to-Motion">
+    <meta name="author" content="Seong-Eun Hong">
+    <title>Seong-Eun Hong | Graphics Researcher</title>
 
-{% include about-section.html %}
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-{% include education-section.html %}
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-{% include pubs-section.html %}
+    <link rel="stylesheet" href="style.css">
+</head>
 
-{% include patient-section.html %}
+<body>
+    <!-- Interactive Canvas Background -->
+    <canvas id="interactive-canvas"></canvas>
 
-{% include awards-section.html %}
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
 
-{% include skills-section.html %}
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">Seong-Eun Hong</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#news" class="nav-link">News</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#patents" class="nav-link">Patents</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#awards" class="nav-link">Awards</a></li>
+                <li><a href="#seminars" class="nav-link">Seminars</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-{% include experience-section.html %}
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-sphere sphere-1"></div>
+            <div class="gradient-sphere sphere-2"></div>
+            <div class="gradient-sphere sphere-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <img src="image/profile.png" alt="Seong-Eun Hong" class="hero-image">
+                </div>
+                <div class="hero-image-glow"></div>
+            </div>
+            <h1 class="hero-title">
+                <span class="greeting">Hello, I'm</span>
+                <span class="name">Seong-Eun Hong</span>
+            </h1>
+            <p class="hero-subtitle">Ph.D. Student @ Korea University</p>
+            <p class="hero-description">
+                Exploring the intersection of <span class="highlight">Computer Graphics</span>,
+                <span class="highlight">Motion Synthesis</span>, and
+                <span class="highlight">Deep Learning</span>
+            </p>
+            <div class="hero-cta">
+                <a href="#publications" class="btn btn-primary">
+                    <i class="fas fa-file-alt"></i>
+                    View Publications
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Get in Touch
+                </a>
+            </div>
+            <div class="hero-scroll">
+                <a href="#about" class="scroll-indicator">
+                    <span>Scroll Down</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-{% include services-section.html %}
+    <!-- Recent News Section -->
+    <section id="news" class="section news">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-newspaper"></i></span>
+                Recent News
+            </h2>
+            <div class="news-list">
+                <div class="news-item glass-card">
+                    <span class="news-date">2026.01.26</span>
+                    <p class="news-text">1 paper <span class="news-badge accepted">Accepted</span> @ <strong>ICLR
+                            2026</strong></p>
+                </div>
+                <div class="news-item glass-card">
+                    <span class="news-date">2025.12.23</span>
+                    <p class="news-text">1 paper <span class="news-badge accepted">Accepted</span> @ <strong>CVM
+                            2026</strong></p>
+                </div>
+                <div class="news-item glass-card">
+                    <span class="news-date">2025.12.17</span>
+                    <p class="news-text">1 paper <span class="news-badge presented">Presented</span> @ <strong>SIGGRAPH
+                            Asia 2025</strong></p>
+                </div>
+                <div class="news-item glass-card">
+                    <span class="news-date">2025.11.17</span>
+                    <p class="news-text">1 paper (Oral) <span class="news-badge accepted">Accepted</span> @ <strong>WACV
+                            2026</strong></p>
+                </div>
+                <div class="news-item glass-card">
+                    <span class="news-date">2025.08.16</span>
+                    <p class="news-text">1 paper <span class="news-badge accepted">Accepted</span> @ <strong>SIGGRAPH
+                            Asia 2025</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-{% include portfolio-section.html %}
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-user-circle"></i></span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text glass-card">
+                    <p class="about-intro">
+                        I am a <strong>Graphics Researcher</strong> and <strong>Ph.D. Student</strong> at Korea
+                        University.
+                        My research focuses on <strong>understanding and imitating human behaviors</strong> through
+                        Computer Graphics and Deep Learning.
+                    </p>
 
-{% include testimonial-section.html %}
+                    <div class="about-interests">
+                        <h3>Research Interests</h3>
+                        <div class="interest-tags">
+                            <span class="tag">Computer Graphics</span>
+                            <span class="tag">Natural Language Processing</span>
+                            <span class="tag">Virtual Agents</span>
+                            <span class="tag">Crowd Simulation</span>
+                            <span class="tag">Motion Synthesis</span>
+                            <span class="tag">Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="stat-number" id="stat-publications" data-count="5">0</div>
+                        <div class="stat-label">Publications</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="stat-number" id="stat-awards" data-count="6">0</div>
+                        <div class="stat-label">Awards</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                        <div class="stat-number" id="stat-projects" data-count="2">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-{% include client-section.html %}
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-graduation-cap"></i></span>
+                Education
+            </h2>
+            <div class="awards-timeline">
+                <!-- Korea University -->
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024.03 - 2030.02 (Expected)</span>
+                        <h3 class="award-title">Korea University</h3>
+                        <p class="award-org">Doctor of Philosophy - Ph.D. Student, Computer Science</p>
+                        <p class="award-description">
+                            Research Interest: <span class="highlight">Computer Graphics</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Kyung Hee University -->
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2018.03 - 2023.02</span>
+                        <h3 class="award-title">Kyung Hee University</h3>
+                        <p class="award-org">Bachelor, Software Convergence</p>
+                        <p class="award-description">
+                            GPA: <strong>4.04/4.5</strong><br>
+                            Acquired Skills: Deep Learning, Natural Language Processing (NLP)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-briefcase"></i></span>
+                Experience
+            </h2>
+            <div class="awards-timeline">
+                <!-- IIIXR Lab -->
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2023.09 - 2024.02 (6 mos)</span>
+                        <h3 class="award-title">IIIXR Lab</h3>
+                        <p class="award-org">Intern · On-site</p>
+                    </div>
+                </div>
+
+                <!-- TmaxA&C -->
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2023.03 - 2023.08 (6 mos)</span>
+                        <h3 class="award-title">TmaxA&C</h3>
+                        <p class="award-org">NLP Researcher · Full-time</p>
+                        <p class="award-description">
+                            Pangyo, South Korea · On-site
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section publications">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-book-open"></i></span>
+                Publications
+            </h2>
+
+            <!-- Year Separator -->
+            <div class="year-separator">
+                <span>2026</span>
+            </div>
+
+            <div class="publications-list">
+                <!-- Publication 1 - Event-T2M -->
+                <article class="publication-card glass-card">
+                    <div class="pub-thumbnail">
+                        <img src="image/ICLR.png" alt="Event-T2M" class="pub-thumbnail-img">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Event-T2M: Event-level Conditioning for Complex Text-to-Motion Synthesis
+                        </h3>
+                        <p class="pub-authors">
+                            <strong>Seong-Eun Hong</strong><sup>*</sup>, Jaeyoung Seon<sup>*</sup>, Juyeong Hwang,
+                            JongHwan Shin, and HyeongYeop Kang
+                        </p>
+                        <p class="pub-venue">
+                            <span class="venue-name">ICLR 2026</span>
+                            <span class="pub-type">Conference Paper</span>
+                        </p>
+                        <p class="pub-meta">
+                            <i class="fas fa-map-marker-alt"></i> Rio de Janeiro, Brazil | Apr. 23-27, 2026
+                        </p>
+                        <p class="pub-abstract">
+                            A novel approach for event-level conditioning in text-to-motion synthesis,
+                            enabling complex and nuanced motion generation from text descriptions.
+                        </p>
+                        <div class="pub-links">
+                            <a href="http://arxiv.org/abs/2602.04292" target="_blank" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> Paper
+                            </a>
+                            <a href="https://github.com/tjswodud/EventT2M-codes" target="_blank" class="pub-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://tjswodud.github.io/EventT2M/" target="_blank" class="pub-link">
+                                <i class="fas fa-globe"></i> Project Page
+                            </a>
+                            <a href="#" class="pub-link">
+                                <i class="fas fa-play-circle"></i> Video
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Publication 2 - ORACLE -->
+                <article class="publication-card glass-card">
+                    <div class="pub-thumbnail">
+                        <img src="image/CVM.png" alt="ORACLE" class="pub-thumbnail-img">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">ORACLE: Orchestrate NPC Daily Activities using Contrastive Learning with
+                            Transformer-CVAE</h3>
+                        <p class="pub-authors">
+                            <strong>Seong-Eun Hong</strong>, Juyeong Hwang, Ryunha Lee, and HyeongYeop Kang
+                        </p>
+                        <p class="pub-venue">
+                            <span class="venue-name">CVM 2026</span>
+                            <span class="pub-type">Conference Paper</span>
+                        </p>
+                        <p class="pub-meta">
+                            <i class="fas fa-map-marker-alt"></i> Seoul, South Korea | Apr. 2026
+                        </p>
+                        <p class="pub-abstract">
+                            A framework for orchestrating NPC daily activities using contrastive learning
+                            combined with Transformer-CVAE architecture for realistic virtual agent behaviors.
+                        </p>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> Paper
+                            </a>
+                            <a href="#" class="pub-link">
+                                <i class="fas fa-play-circle"></i> Video
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Publication 3 - BiPO -->
+                <article class="publication-card glass-card">
+                    <div class="pub-thumbnail">
+                        <img src="image/WACV.png" alt="BiPO" class="pub-thumbnail-img">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">BiPO: Bidirectional Partial Occlusion Network for Text-to-Motion Synthesis
+                        </h3>
+                        <p class="pub-authors">
+                            <strong>Seong-Eun Hong</strong>, Soobin Lim, Juyeong Hwang, Minwook Chang, and HyeongYeop
+                            Kang
+                        </p>
+                        <p class="pub-venue">
+                            <span class="venue-name">WACV 2026</span>
+                            <span class="pub-type">Conference Paper</span> <span class="pub-type oral">Oral
+                                Presentation</span>
+                        </p>
+                        <p class="pub-meta">
+                            <i class="fas fa-map-marker-alt"></i> Tucson, Arizona, USA | Mar. 6-10, 2026
+                        </p>
+                        <p class="pub-abstract">
+                            A bidirectional partial occlusion network designed for improved text-to-motion synthesis,
+                            achieving state-of-the-art performance and selected for oral presentation.
+                        </p>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2412.00112" target="_blank" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> Paper
+                            </a>
+                            <a href="https://github.com/seoneun/BiPO-codes" target="_blank" class="pub-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://seoneun.github.io/BiPO-page/" target="_blank" class="pub-link">
+                                <i class="fas fa-globe"></i> Project Page
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=gzCGyC8ocus" target="_blank" class="pub-link">
+                                <i class="fas fa-play-circle"></i> Video
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Year Separator -->
+            <div class="year-separator">
+                <span>2025</span>
+            </div>
+
+            <div class="publications-list">
+                <!-- Publication 4 - Virtual Agent Head Rotation -->
+                <article class="publication-card glass-card">
+                    <div class="pub-thumbnail">
+                        <img src="image/Siggraphasia.png" alt="Virtual Agent Head Rotation" class="pub-thumbnail-img">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">How Does a Virtual Agent Decide Where to Look? Symbolic Cognitive
+                            Reasoning for Embodied Head Rotation</h3>
+                        <p class="pub-authors">
+                            Juyeong Hwang<sup>*</sup>, <strong>Seong-Eun Hong</strong><sup>*</sup>, Jaeyoung Seon, and
+                            HyeongYeop Kang
+                        </p>
+                        <p class="pub-venue">
+                            <span class="venue-name">SIGGRAPH Asia 2025</span>
+                            <span class="pub-type">Conference Paper</span> <span class="pub-type oral">Oral
+                                Presentation</span>
+                        </p>
+                        <p class="pub-meta">
+                            <i class="fas fa-map-marker-alt"></i> Hong Kong | Dec. 15-18, 2025
+                        </p>
+                        <p class="pub-abstract">
+                            A novel framework for symbolic cognitive reasoning enabling virtual agents to make
+                            natural head rotation decisions in embodied environments.
+                        </p>
+                        <div class="pub-links">
+                            <a href="https://dl.acm.org/doi/10.1145/3757377.3763849" target="_blank" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> Paper
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=S9Tvx3NQSh8&t=3s" target="_blank" class="pub-link">
+                                <i class="fas fa-play-circle"></i> Video
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Year Separator -->
+            <div class="year-separator">
+                <span>2022</span>
+            </div>
+
+            <div class="publications-list">
+                <!-- Publication 5 - AACL 2022 -->
+                <article class="publication-card glass-card">
+                    <div class="pub-thumbnail">
+                        <img src="image/AACL.PNG" alt="AACL Paper" class="pub-thumbnail-img">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Post-Training with Interrogative Sentences for Enhancing BART-based Korean
+                            Question Generator</h3>
+                        <p class="pub-authors">
+                            Gyu-Min Park, <strong>Seong-Eun Hong</strong>, and Seong-Bae Park
+                        </p>
+                        <p class="pub-venue">
+                            <span class="venue-name">AACL-IJCNLP 2022</span>
+                            <span class="pub-type">Conference Paper</span>
+                        </p>
+                        <p class="pub-meta">
+                            <i class="fas fa-map-marker-alt"></i> Taipei City, Taiwan | Nov. 20-23, 2022
+                        </p>
+                        <p class="pub-abstract">
+                            Proposed a post-training method using interrogative sentences to improve the performance of
+                            BART-based Korean question generation models.
+                        </p>
+                        <div class="pub-links">
+                            <a href="https://aclanthology.org/2022.aacl-short.26/" target="_blank" class="pub-link">
+                                <i class="fas fa-file-pdf"></i> Paper
+                            </a>
+                            <a href="https://github.com/gminipark/post_training_qg" target="_blank" class="pub-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://underline.io/lecture/64681-post-training-with-interrogative-sentences-for-enhancing-bart-based-korean-question-generator"
+                                target="_blank" class="pub-link">
+                                <i class="fas fa-play-circle"></i> Video
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patents Section -->
+    <section id="patents" class="section patents">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-lightbulb"></i></span>
+                Patents
+            </h2>
+            <div class="awards-timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025.10.16</span>
+                        <h3 class="award-title">Method and System for Determining Head Rotation Based on Agent's Gaze
+                        </h3>
+                        <p class="award-org">App. No: 10-2025-0149262</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024.04.24</span>
+                        <h3 class="award-title">System and Method for Generating Daily Activity Plans for Virtual Agents
+                        </h3>
+                        <p class="award-org">App. No: 10-2024-0054714</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2022.11.18</span>
+                        <h3 class="award-title">Additional Training Technique for Language Models for Query Generation
+                        </h3>
+                        <p class="award-org">App. No: 10-2022-0155485</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-code-branch"></i></span>
+                Projects
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-btn"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Text-to-Motion Generation</h3>
+                        <p class="project-description">
+                            Joint research with NCSOFT. Developing high-fidelity motion synthesis models
+                            capable of generating complex interactions from natural language descriptions.
+                        </p>
+                        <div class="project-tech">
+                            <span>Diffusion Models</span>
+                            <span>PyTorch</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-btn"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Uncertainty-Aware Self-Growing Agent</h3>
+                        <p class="project-description">
+                            Joint research with ETRI. Developing agent technology that self-improves by
+                            recognizing uncertainty and asking questions to resolve ambiguity.
+                        </p>
+                        <div class="project-tech">
+                            <span>Question Generation</span>
+                            <span>Fine-tuning</span>
+                            <span>Post-training</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="section awards">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-trophy"></i></span>
+                Awards & Honors
+            </h2>
+            <div class="awards-timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025</span>
+                        <h3 class="award-title">Best Paper Award</h3>
+                        <p class="award-org">KCGS 2025</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2022</span>
+                        <h3 class="award-title">Best Paper Award</h3>
+                        <p class="award-org">KSC 2022</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2022</span>
+                        <h3 class="award-title">Excellence Presentation Award</h3>
+                        <p class="award-org">KCC 2022</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2022</span>
+                        <h3 class="award-title">Grand Prize</h3>
+                        <p class="award-org">SW Festival · Kyung Hee University</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2021</span>
+                        <h3 class="award-title">Excellence Award</h3>
+                        <p class="award-org">Khuthon 2021 · Kyung Hee University</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2021</span>
+                        <h3 class="award-title">Popularity Award</h3>
+                        <p class="award-org">Khuthon 2021 · Kyung Hee University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Seminars Section -->
+    <section id="seminars" class="section seminars">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-chalkboard-teacher"></i></span>
+                Personal Seminars
+            </h2>
+            <div class="seminars-grid">
+                <!-- Seminar 1 -->
+                <article class="seminar-card glass-card">
+                    <a href="https://www.youtube.com/watch?v=tUMpUv9Tmik" target="_blank" class="seminar-thumbnail">
+                        <img src="https://img.youtube.com/vi/tUMpUv9Tmik/maxresdefault.jpg"
+                            alt="Chain-of-Thought World Model" class="seminar-thumb-img">
+                        <div class="play-overlay"><i class="fas fa-play-circle"></i></div>
+                    </a>
+                    <div class="seminar-content">
+                        <span class="seminar-date"><i class="fas fa-calendar-alt"></i> 2026.01.31</span>
+                        <h3 class="seminar-title">What if we use Chain-of-Thought to roll out a world model?</h3>
+                        <div class="seminar-links">
+                            <a href="https://www.youtube.com/watch?v=tUMpUv9Tmik" target="_blank" class="pub-link">
+                                <i class="fab fa-youtube"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Seminar 2 -->
+                <article class="seminar-card glass-card">
+                    <a href="https://www.youtube.com/watch?v=_FM8Vi5mQhU" target="_blank" class="seminar-thumbnail">
+                        <img src="https://img.youtube.com/vi/_FM8Vi5mQhU/maxresdefault.jpg" alt="World Model and VLA"
+                            class="seminar-thumb-img">
+                        <div class="play-overlay"><i class="fas fa-play-circle"></i></div>
+                    </a>
+                    <div class="seminar-content">
+                        <span class="seminar-date"><i class="fas fa-calendar-alt"></i> 2025.10.26</span>
+                        <h3 class="seminar-title">What if the world model and VLA met?</h3>
+                        <div class="seminar-links">
+                            <a href="https://www.youtube.com/watch?v=_FM8Vi5mQhU" target="_blank" class="pub-link">
+                                <i class="fab fa-youtube"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Seminar 3 -->
+                <article class="seminar-card glass-card">
+                    <a href="https://www.youtube.com/watch?v=WZjjj7-v2BY" target="_blank" class="seminar-thumbnail">
+                        <img src="https://img.youtube.com/vi/WZjjj7-v2BY/maxresdefault.jpg" alt="Critic Model Training"
+                            class="seminar-thumb-img">
+                        <div class="play-overlay"><i class="fas fa-play-circle"></i></div>
+                    </a>
+                    <div class="seminar-content">
+                        <span class="seminar-date"><i class="fas fa-calendar-alt"></i> 2025.07.16</span>
+                        <h3 class="seminar-title">How to train a critic model?</h3>
+                        <div class="seminar-links">
+                            <a href="https://www.youtube.com/watch?v=WZjjj7-v2BY" target="_blank" class="pub-link">
+                                <i class="fab fa-youtube"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Seminar 4 -->
+                <article class="seminar-card glass-card">
+                    <a href="https://www.youtube.com/watch?v=W4XgqeMS7SM" target="_blank" class="seminar-thumbnail">
+                        <img src="https://img.youtube.com/vi/W4XgqeMS7SM/maxresdefault.jpg" alt="PersonaBooth"
+                            class="seminar-thumb-img">
+                        <div class="play-overlay"><i class="fas fa-play-circle"></i></div>
+                    </a>
+                    <div class="seminar-content">
+                        <span class="seminar-date"><i class="fas fa-calendar-alt"></i> 2025.04.19</span>
+                        <h3 class="seminar-title">PersonaBooth: Personalized Text-to-Motion Generation</h3>
+                        <div class="seminar-links">
+                            <a href="https://www.youtube.com/watch?v=W4XgqeMS7SM" target="_blank" class="pub-link">
+                                <i class="fab fa-youtube"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Seminar 5 -->
+                <article class="seminar-card glass-card">
+                    <a href="https://www.youtube.com/watch?v=2LaS6D8YyVs" target="_blank" class="seminar-thumbnail">
+                        <img src="https://img.youtube.com/vi/2LaS6D8YyVs/maxresdefault.jpg" alt="BAMM"
+                            class="seminar-thumb-img">
+                        <div class="play-overlay"><i class="fas fa-play-circle"></i></div>
+                    </a>
+                    <div class="seminar-content">
+                        <span class="seminar-date"><i class="fas fa-calendar-alt"></i> 2024.12.14</span>
+                        <h3 class="seminar-title">BAMM: Bidirectional Autoregressive Motion Model</h3>
+                        <div class="seminar-links">
+                            <a href="https://www.youtube.com/watch?v=2LaS6D8YyVs" target="_blank" class="pub-link">
+                                <i class="fab fa-youtube"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Seminar 6 -->
+                <article class="seminar-card glass-card">
+                    <a href="https://www.youtube.com/watch?v=lBMNSXay-EI" target="_blank" class="seminar-thumbnail">
+                        <img src="https://img.youtube.com/vi/lBMNSXay-EI/maxresdefault.jpg" alt="ParCo"
+                            class="seminar-thumb-img">
+                        <div class="play-overlay"><i class="fas fa-play-circle"></i></div>
+                    </a>
+                    <div class="seminar-content">
+                        <span class="seminar-date"><i class="fas fa-calendar-alt"></i> 2024.09.08</span>
+                        <h3 class="seminar-title">ParCo: Part-Coordinating Text-to-Motion Synthesis</h3>
+                        <div class="seminar-links">
+                            <a href="https://www.youtube.com/watch?v=lBMNSXay-EI" target="_blank" class="pub-link">
+                                <i class="fab fa-youtube"></i> Watch
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-paper-plane"></i></span>
+                Get in Touch
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info glass-card">
+                    <p class="contact-intro">
+                        I'm always open to discussing new research collaborations,
+                        interesting projects, or opportunities in graphics and motion synthesis.
+                    </p>
+                    <div class="contact-items">
+                        <a href="mailto:seong_eun@korea.ac.kr" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>seong_eun@korea.ac.kr</span>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=yLbYxuYAAAAJ&hl=ko" target="_blank"
+                            class="contact-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Google Scholar</span>
+                        </a>
+                        <a href="https://github.com/seoneun" target="_blank" class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/seong-eun-hong-538098172/" target="_blank"
+                            class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <a href="mailto:seong_eun@korea.ac.kr" class="social-btn" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=yLbYxuYAAAAJ&hl=ko" target="_blank"
+                        class="social-btn" aria-label="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="https://github.com/seoneun" target="_blank" class="social-btn" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/seong-eun-hong-538098172/" target="_blank" class="social-btn"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    © 2025 Seong-Eun Hong. All rights reserved.
+                </p>
+                <p class="footer-credit">
+                    Designed with <i class="fas fa-heart"></i> for beautiful research
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
