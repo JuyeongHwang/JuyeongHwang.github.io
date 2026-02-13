@@ -1889,6 +1889,14 @@ img {
     margin: 0 auto;
 }
 
+.hero-scroll {
+    display: flex;
+    justify-content: center;
+    /* Centered horizontally */
+    width: 100%;
+    margin-top: 40px;
+}
+
 /* ============================================
    PERSONAL SECTION (Unified Seminars + Projects)
    ============================================ */
@@ -2069,13 +2077,11 @@ img {
 
 /* Update Seminar Card Styling */
 .seminar-card-white {
-    background: white;
-    border-radius: var(--border-radius);
-    padding: 10px;
-    /* Padding for the "white box" feel */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background: transparent;
+    border-radius: var(--border-radius-sm);
+    padding: 0;
+    box-shadow: none;
     border: none !important;
-    /* Ensure no black border */
 }
 
 .seminar-card-white .seminar-thumbnail {
