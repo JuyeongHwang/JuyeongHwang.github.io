@@ -79,9 +79,20 @@
                         <span class="name">Juyeong Hwang</span>
                     </h1>
                     <p class="hero-description">
-                        Exploring the intersection of Computer Graphics and Deep Learning.
+                        I am interested in natural virtual agent motion.
                     </p>
-                    <div class="hero-cta">
+                    <div class="hero-interests">
+                        <h4 style="font-size: 1rem; margin-bottom: 10px; color: var(--text-primary);">Research Interests
+                        </h4>
+                        <div class="interest-tags" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span class="tag">Computer Graphics</span>
+                            <span class="tag">Virtual Agents</span>
+                            <span class="tag">Crowd Simulation</span>
+                            <span class="tag">Motion Synthesis</span>
+                            <span class="tag">Deep Learning</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta" style="margin-top: 30px;">
                         <a href="#publications" class="btn btn-primary">
                             <i class="fas fa-file-alt"></i>
                             View Publications
@@ -140,84 +151,56 @@
 
     <!-- News Section Removed (Moved to Hero) -->
 
-    <!-- About Section -->
-    <section id="about" class="section about">
+    <!-- About Section Removed (Moved to Hero) -->
+
+    <!-- Biography Section (Education + Activities) -->
+    <section id="biography" class="section biography">
         <div class="container">
             <h2 class="section-title">
-                <span class="title-icon"><i class="fas fa-user-circle"></i></span>
-                About Me
+                <span class="title-icon"><i class="fas fa-user-graduate"></i></span>
+                Biography
             </h2>
-            <div class="about-content">
-                <div class="about-text glass-card">
-                    <p class="about-intro">
-                        I am interested in natural virtual agent motion.
-                    </p>
-
-                    <div class="about-interests">
-                        <h3>Research Interests</h3>
-                        <div class="interest-tags">
-                            <span class="tag">Computer Graphics</span>
-                            <!-- Removed Natural Language Processing -->
-                            <span class="tag">Virtual Agents</span>
-                            <span class="tag">Crowd Simulation</span>
-                            <span class="tag">Motion Synthesis</span>
-                            <span class="tag">Deep Learning</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-card glass-card">
-                        <div class="stat-icon"><i class="fas fa-file-alt"></i></div>
-                        <div class="stat-number" id="stat-publications" data-count="5">0</div>
-                        <div class="stat-label">Publications</div>
-                    </div>
-                    <div class="stat-card glass-card">
-                        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
-                        <div class="stat-number" id="stat-awards" data-count="6">0</div>
-                        <div class="stat-label">Awards</div>
-                    </div>
-                    <div class="stat-card glass-card">
-                        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
-                        <div class="stat-number" id="stat-projects" data-count="2">0</div>
-                        <div class="stat-label">Projects</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section education">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon"><i class="fas fa-graduation-cap"></i></span>
-                Education
-            </h2>
-            <div class="awards-timeline">
-                <!-- Korea University -->
-                <div class="timeline-item glass-card">
-                    <div class="timeline-icon">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">Sep.2023 - present</span>
-                        <h3 class="award-title">Korea University</h3>
-                        <p class="award-org">Doctor of Philosophy - Ph.D. Student, Computer Science</p>
-                        <p class="award-description">
+            <div class="biography-grid">
+                <!-- Left Column: Education -->
+                <div class="bio-column">
+                    <h3>Education</h3>
+                    <!-- Korea University -->
+                    <div class="bio-item">
+                        <span class="bio-year">Sep.2023 - present</span>
+                        <h4 class="bio-title">Korea University</h4>
+                        <p class="bio-org">Doctor of Philosophy - Ph.D. Student, Computer Science</p>
+                        <p class="bio-desc">
                             Research Interest: <span class="highlight">Computer Graphics</span>
                         </p>
                     </div>
+
+                    <!-- Kyung Hee University -->
+                    <div class="bio-item">
+                        <span class="bio-year">Mar.2019 - Aug.2023</span>
+                        <h4 class="bio-title">Kyung Hee University</h4>
+                        <p class="bio-org">Bachelor, Software Convergence</p>
+                    </div>
                 </div>
 
-                <!-- Kyung Hee University -->
-                <div class="timeline-item glass-card">
-                    <div class="timeline-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                <!-- Right Column: Activities -->
+                <div class="bio-column">
+                    <h3>Activities</h3>
+                    <!-- Activity 1 -->
+                    <div class="bio-item">
+                        <span class="bio-year">2021</span>
+                        <h4 class="bio-title">Director of PR</h4>
+                        <p class="bio-org">College of Software & Convergence Student Council</p>
                     </div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">Mar.2019 - Aug.2023</span>
-                        <h3 class="award-title">Kyung Hee University</h3>
-                        <p class="award-org">Bachelor, Software Convergence</p>
+
+                    <!-- Activity 2 -->
+                    <div class="bio-item">
+                        <h4 class="bio-title">Great Supporters</h4>
+                    </div>
+
+                    <!-- Activity 3 -->
+                    <div class="bio-item">
+                        <span class="bio-year">2021.03 - 2023.08.31</span>
+                        <h4 class="bio-title">Club Ludens</h4>
                     </div>
                 </div>
             </div>
@@ -537,49 +520,7 @@
         </div>
     </section>
 
-    <!-- Activities Section -->
-    <section id="activities" class="section activities">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon"><i class="fas fa-users"></i></span>
-                Activities
-            </h2>
-            <div class="awards-timeline">
-                <!-- Activity 1 -->
-                <div class="timeline-item glass-card">
-                    <div class="timeline-icon">
-                        <i class="fas fa-user-friends"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2021</span>
-                        <h3 class="award-title">Director of PR</h3>
-                        <p class="award-org">College of Software & Convergence Student Council</p>
-                    </div>
-                </div>
-
-                <!-- Activity 2 -->
-                <div class="timeline-item glass-card">
-                    <div class="timeline-icon">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3 class="award-title">Great Supporters</h3>
-                    </div>
-                </div>
-
-                <!-- Activity 3 -->
-                <div class="timeline-item glass-card">
-                    <div class="timeline-icon">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2021.03 - 2023.08.31</span>
-                        <h3 class="award-title">Club Ludens</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Activities Section Removed (Moved to Biography) -->
 
 
 
@@ -591,29 +532,29 @@
                 Personal Seminars
             </h2>
             <div class="video-grid">
-                <div class="video-card glass-card">
+                <div class="video-card seminar-card-white">
                     <iframe src="https://www.youtube.com/embed/6qI-85BofSg?start=73" title="YouTube video"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                <div class="video-card glass-card">
+                <div class="video-card seminar-card-white">
                     <iframe src="https://www.youtube.com/embed/ZSrBf2tkPRE?start=0" title="YouTube video"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                <div class="video-card glass-card">
+                <div class="video-card seminar-card-white">
                     <iframe src="https://www.youtube.com/embed/ecuJM7G3fwg" title="YouTube video" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                <div class="video-card glass-card">
+                <div class="video-card seminar-card-white">
                     <iframe src="https://www.youtube.com/embed/rG4rsSGa8ZM" title="YouTube video" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                <div class="video-card glass-card">
+                <div class="video-card seminar-card-white">
                     <iframe src="https://www.youtube.com/embed/QsV7tY705Dk" title="YouTube video" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
@@ -630,12 +571,12 @@
                 Personal Projects
             </h2>
             <div class="video-grid">
-                <div class="video-card glass-card">
+                <div class="video-card seminar-card-white">
                     <iframe src="https://www.youtube.com/embed/LIoT5S8Exvc" title="YouTube video" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                <div class="video-card glass-card">
+                <div class="video-card seminar-card-white">
                     <iframe src="https://www.youtube.com/embed/KzN3fV2J-3w" title="YouTube video" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>

@@ -31,8 +31,13 @@
     --text-primary: #0D47A1;
     --text-secondary: #1565C0;
     --text-tertiary: #1976D2;
+    --text-primary: #0D47A1;
+    --text-secondary: #1565C0;
+    --text-tertiary: #1976D2;
     --text-accent: #333333;
-    /* 80% Gray for better visibility */
+    /* 80% Gray */
+    --text-light-gray: #757575;
+    /* New Light Gray for Timeline/Education */
 
     /* Glass Effect - Adjusted for Light Background */
     --glass-bg: rgba(255, 255, 255, 0.6);
@@ -207,6 +212,8 @@ body {
     font-family: var(--font-primary);
     background: var(--gradient-primary);
     color: var(--text-primary);
+    font-size: 75%;
+    /* Reduced global font size (closer to 30% reduction as requested) */
     line-height: 1.7;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -1262,7 +1269,7 @@ img {
     font-size: 0.85rem;
     font-weight: 600;
     font-weight: 600;
-    color: var(--text-accent);
+    color: var(--text-light-gray);
     margin-bottom: 12px;
     transition: background-color 0.3s ease;
 }
@@ -1277,7 +1284,7 @@ img {
 
 .award-org {
     font-size: 0.95rem;
-    color: var(--accent-secondary);
+    color: var(--text-light-gray);
     margin-bottom: 8px;
 }
 
@@ -1792,7 +1799,8 @@ img {
     max-width: var(--container-width);
     width: 100%;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 120px 24px 0 24px;
+    /* Added top padding to prevent menu overlap */
 }
 
 .hero-intro {
@@ -1956,4 +1964,81 @@ img {
         max-width: 600px;
         margin: 0 auto;
     }
+}
+
+/* ============================================
+   BIOGRAPHY SECTION (Education + Activities)
+   ============================================ */
+.biography-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.bio-column h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid var(--text-light-gray);
+    padding-bottom: 10px;
+}
+
+/* Remove glass card effect for Biography items as requested ("remove square box") */
+.bio-item {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bio-item:last-child {
+    border-bottom: none;
+}
+
+.bio-year {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-light-gray);
+    /* Light Gray */
+}
+
+.bio-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.bio-org {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.bio-desc {
+    font-size: 0.9rem;
+    color: var(--text-light-gray);
+}
+
+@media (max-width: 768px) {
+    .biography-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Update Seminar Card Styling */
+.seminar-card-white {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    /* Padding for the "white box" feel */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: none !important;
+    /* Ensure no black border */
+}
+
+.seminar-card-white .seminar-thumbnail {
+    border-radius: var(--border-radius-sm);
 }
