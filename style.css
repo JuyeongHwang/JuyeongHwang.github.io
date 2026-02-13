@@ -1239,7 +1239,8 @@ img {
 
 .timeline-icon {
     position: absolute;
-    left: -76px;
+    left: -53px;
+    /* Adjusted from -76px to center on the timeline line (which is at 30px) */
     top: 30px;
     width: 48px;
     height: 48px;
@@ -1775,4 +1776,184 @@ img {
 .hero-title .greeting,
 .hero-title .name {
     opacity: 1;
+}
+
+/* ============================================
+   HERO NEWS & LAYOUT UPDATES
+   ============================================ */
+.hero-content {
+    /* Updated layout for Hero with News */
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 40px;
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    max-width: var(--container-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.hero-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    text-align: left;
+    width: 100%;
+}
+
+.hero-text {
+    max-width: none;
+    flex: 1;
+}
+
+.hero-news-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+    padding: 24px;
+    height: 100%;
+    max-height: 500px;
+    overflow-y: auto;
+    box-shadow: var(--glass-shadow);
+}
+
+.hero-news-panel h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.news-item-sm {
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.news-item-sm:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.news-date-sm {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-accent);
+    margin-bottom: 4px;
+}
+
+.news-item-sm p {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* ============================================
+   VIDEO GRID SECTION
+   ============================================ */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.video-card {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: var(--border-radius-sm);
+    background: black;
+}
+
+.video-card iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.project-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: white;
+    /* Solid background for visibility */
+    border: 1px solid var(--glass-border);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: var(--transition-base);
+    text-decoration: none;
+}
+
+.project-link-btn:hover {
+    background: var(--gradient-primary);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-2px);
+}
+
+.project-link-btn i {
+    color: #ff0000;
+    /* YouTube Red */
+}
+
+.project-link-btn:hover i {
+    color: white;
+}
+
+
+/* Responsive Adjustments for New Layout */
+@media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .hero-intro {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-text .hero-cta {
+        justify-content: center;
+    }
+
+    .hero-text .hero-description {
+        margin: 0 auto 40px;
+    }
+
+    .hero-news-panel {
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
