@@ -7,32 +7,31 @@
    CSS VARIABLES & DESIGN SYSTEM
    ============================================ */
 :root {
-    /* Colors - Dark Theme (Default)
-       Updated to use a light sky blue palette for the overall page background as requested. */
-    --bg-primary: #e6f7ff;
-    /* light sky blue */
-    --bg-secondary: #f0f9ff;
-    --bg-tertiary: #e0f2fe;
+    /* Colors - Pastel Sky-Pink Theme */
+    --bg-primary: #B2EBF2;
+    /* Pastel Sky Blue */
+    --bg-secondary: #E1F5FE;
+    /* Light Blue */
+    --bg-tertiary: #F8BBD0;
+    /* Pastel Pink */
 
-    /* Accent Colors - Vibrant Gradients */
-    --accent-primary: #6366f1;
-    --accent-secondary: #8b5cf6;
-    --accent-tertiary: #a855f7;
-    --accent-cyan: #06b6d4;
-    --accent-pink: #ec4899;
-    --accent-orange: #f97316;
+    /* Accent Colors - Yellow */
+    --accent-primary: #FBC02D;
+    /* Darker Yellow for better contrast on light bg */
+    --accent-secondary: #FDD835;
+    --accent-tertiary: #FFF59D;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
-    --gradient-secondary: linear-gradient(135deg, #06b6d4 0%, #6366f1 100%);
-    --gradient-accent: linear-gradient(135deg, #ec4899 0%, #8b5cf6 50%, #6366f1 100%);
-    --gradient-warm: linear-gradient(135deg, #f97316 0%, #ec4899 100%);
+    --gradient-primary: linear-gradient(135deg, #B2EBF2 0%, #F8BBD0 100%);
+    --gradient-secondary: linear-gradient(135deg, #E1F5FE 0%, #FCE4EC 100%);
+    --gradient-accent: linear-gradient(135deg, #FBC02D 0%, #F57F17 100%);
+    --gradient-warm: linear-gradient(135deg, #FFEB3B 0%, #F8BBD0 100%);
 
-    /* Text Colors - Updated to Black/Dark for Light Background */
-    --text-primary: #0f172a;
-    --text-secondary: #334155;
-    --text-tertiary: #475569;
-    --text-accent: #4f46e5;
+    /* Text Colors - Dark Blue / White */
+    --text-primary: #0D47A1;
+    --text-secondary: #1565C0;
+    --text-tertiary: #1976D2;
+    --text-accent: #FBC02D;
 
     /* Glass Effect - Adjusted for Light Background */
     --glass-bg: rgba(255, 255, 255, 0.6);
@@ -205,7 +204,7 @@ html {
 
 body {
     font-family: var(--font-primary);
-    background: var(--bg-primary);
+    background: var(--gradient-primary);
     color: var(--text-primary);
     line-height: 1.7;
     overflow-x: hidden;
