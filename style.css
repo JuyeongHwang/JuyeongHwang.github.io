@@ -9,7 +9,8 @@
 :root {
     /* Colors - Dark Theme (Default)
        Updated to use a light sky blue palette for the overall page background as requested. */
-    --bg-primary: #e6f7ff; /* light sky blue */
+    --bg-primary: #e6f7ff;
+    /* light sky blue */
     --bg-secondary: #f0f9ff;
     --bg-tertiary: #e0f2fe;
 
@@ -27,20 +28,20 @@
     --gradient-accent: linear-gradient(135deg, #ec4899 0%, #8b5cf6 50%, #6366f1 100%);
     --gradient-warm: linear-gradient(135deg, #f97316 0%, #ec4899 100%);
 
-    /* Text Colors */
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --text-tertiary: #64748b;
-    --text-accent: #a5b4fc;
+    /* Text Colors - Updated to Black/Dark for Light Background */
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-tertiary: #475569;
+    --text-accent: #4f46e5;
 
-    /* Glass Effect */
-    --glass-bg: rgba(255, 255, 255, 0.03);
-    --glass-border: rgba(255, 255, 255, 0.08);
-    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    /* Glass Effect - Adjusted for Light Background */
+    --glass-bg: rgba(255, 255, 255, 0.6);
+    --glass-border: rgba(0, 0, 0, 0.1);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
 
     /* Navbar */
-    --navbar-bg: rgba(10, 10, 15, 0.9);
-    --mobile-menu-bg: #12121a;
+    --navbar-bg: rgba(220, 240, 255, 0.9);
+    --mobile-menu-bg: #e6f7ff;
 
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -511,7 +512,8 @@ img {
    to the left. */
 .hero-text {
     max-width: 600px;
-    flex: 1; /* allow the text block to occupy remaining horizontal space so that internal flex elements can align to the left */
+    flex: 1;
+    /* allow the text block to occupy remaining horizontal space so that internal flex elements can align to the left */
 }
 
 .hero-text .hero-title,
@@ -539,12 +541,15 @@ img {
         flex-direction: column;
         text-align: center;
     }
+
     .hero-text .hero-cta {
         justify-content: center;
     }
+
     .hero-text .hero-description {
         margin: 0 auto 40px auto;
     }
+
     .hero-text .hero-title,
     .hero-text .hero-subtitle,
     .hero-text .hero-description,
