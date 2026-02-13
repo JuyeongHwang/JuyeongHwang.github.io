@@ -1890,6 +1890,8 @@ img {
 }
 
 .hero-scroll {
+    grid-column: 1 / -1;
+    /* Span full width to center correctly between columns */
     display: flex;
     justify-content: center;
     /* Centered horizontally */
@@ -2075,11 +2077,10 @@ img {
     }
 }
 
-/* Update Seminar Card Styling */
+/* Update Seminar Card Styling - Style Removed as Requested */
 .seminar-card-white {
     background: transparent;
     border-radius: var(--border-radius-sm);
-    padding: 0;
     box-shadow: none;
     border: none !important;
 }
