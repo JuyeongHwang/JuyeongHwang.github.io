@@ -9,9 +9,9 @@
 :root {
     /* Colors - Dark Theme (Default)
        Updated to use a light sky blue palette for the overall page background as requested. */
-    --bg-primary: #e6f7ff; /* light sky blue for main backgrounds */
-    --bg-secondary: #f0fbff; /* lighter variation for secondary backgrounds */
-    --bg-tertiary: #eaf6ff; /* tertiary light tone */
+    --bg-primary: #e6f7ff; /* light sky blue */
+    --bg-secondary: #f0f9ff;
+    --bg-tertiary: #e0f2fe;
 
     /* Accent Colors - Vibrant Gradients */
     --accent-primary: #6366f1;
