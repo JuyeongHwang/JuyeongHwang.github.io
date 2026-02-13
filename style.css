@@ -1920,10 +1920,10 @@ img {
 }
 
 .video-list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    /* Space between stacked videos */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 videos per column = 4 across the page */
+    gap: 15px;
 }
 
 @media (max-width: 768px) {
