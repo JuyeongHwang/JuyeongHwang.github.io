@@ -7,10 +7,11 @@
    CSS VARIABLES & DESIGN SYSTEM
    ============================================ */
 :root {
-    /* Colors - Dark Theme (Default) */
-    --bg-primary: #0a0a0f;
-    --bg-secondary: #12121a;
-    --bg-tertiary: #1a1a25;
+    /* Colors - Dark Theme (Default)
+       Updated to use a light sky blue palette for the overall page background as requested. */
+    --bg-primary: #e6f7ff; /* light sky blue for main backgrounds */
+    --bg-secondary: #f0fbff; /* lighter variation for secondary backgrounds */
+    --bg-tertiary: #eaf6ff; /* tertiary light tone */
 
     /* Accent Colors - Vibrant Gradients */
     --accent-primary: #6366f1;
@@ -431,15 +432,28 @@ img {
 }
 
 .hero-content {
-    text-align: center;
+    /* Align the hero contents horizontally: image on the left, text on the right */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    text-align: left;
     z-index: 1;
     padding: 0 24px;
 }
 
 .hero-image-container {
     position: relative;
-    margin-bottom: 40px;
+    /* Remove bottom margin when laid out horizontally; this will be reintroduced on small screens */
+    margin-bottom: 0;
     display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .hero-image-container {
+        margin-bottom: 40px;
+    }
 }
 
 .hero-image-wrapper {
@@ -488,6 +502,56 @@ img {
     border-radius: 50%;
     z-index: 1;
     animation: pulse 4s ease-in-out infinite;
+}
+
+/* =========================================
+   HERO TEXT LAYOUT ADJUSTMENTS
+   The hero section now places the profile image on the left and text on the right. This
+   wrapper constrains the width of the text block and ensures all nested elements align
+   to the left. */
+.hero-text {
+    max-width: 600px;
+    flex: 1; /* allow the text block to occupy remaining horizontal space so that internal flex elements can align to the left */
+}
+
+.hero-text .hero-title,
+.hero-text .hero-subtitle,
+.hero-text .hero-description,
+.hero-text .hero-cta,
+.hero-text .hero-scroll {
+    text-align: left;
+}
+
+/* Remove horizontal centering on the description and align it with the left */
+/* Remove horizontal centering on the description and align it with the left */
+.hero-text .hero-description {
+    margin: 0 0 40px 0;
+}
+
+/* Align call-to-action buttons to start instead of center */
+.hero-text .hero-cta {
+    justify-content: flex-start;
+}
+
+/* Responsive adjustments: on smaller screens stack the content vertically and center align */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text .hero-cta {
+        justify-content: center;
+    }
+    .hero-text .hero-description {
+        margin: 0 auto 40px auto;
+    }
+    .hero-text .hero-title,
+    .hero-text .hero-subtitle,
+    .hero-text .hero-description,
+    .hero-text .hero-cta,
+    .hero-text .hero-scroll {
+        text-align: center;
+    }
 }
 
 @keyframes pulse {
