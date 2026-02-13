@@ -950,7 +950,8 @@ img {
     height: 200px;
     border-radius: var(--border-radius-sm);
     overflow: hidden;
-    background: var(--bg-tertiary);
+    background: #e2e8f0;
+    /* Changed from var(--bg-tertiary) (Pink) to Light Gray to match Light Mode */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -959,7 +960,8 @@ img {
 .pub-thumbnail-placeholder {
     width: 100%;
     height: 100%;
-    background: var(--bg-tertiary);
+    background: #e2e8f0;
+    /* Changed from var(--bg-tertiary) to match Light Mode */
     display: flex;
     align-items: center;
     justify-content: center;
