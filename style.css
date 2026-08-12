@@ -207,6 +207,11 @@ section[id] {
     color: var(--purple-deep);
 }
 
+.badge-warning {
+    background: rgba(240, 180, 41, 0.2);
+    color: #8a6210;
+}
+
 /* ==========================================================================
    Navigation
    ========================================================================== */
@@ -494,6 +499,7 @@ section[id] {
 
 .pub-card {
     display: flex;
+    flex-direction: row-reverse;
     gap: 24px;
     background: var(--surface);
     border: 1px solid var(--border);
@@ -505,7 +511,7 @@ section[id] {
 
 .pub-thumb {
     flex-shrink: 0;
-    width: 260px;
+    width: 320px;
     align-self: center;
 }
 
@@ -529,7 +535,7 @@ section[id] {
 }
 
 .pub-title {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 1.25;
     color: var(--ink);
@@ -1079,7 +1085,7 @@ section[id] {
     }
 
     .pub-title {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .news-row {
