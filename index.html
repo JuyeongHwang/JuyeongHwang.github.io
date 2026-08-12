@@ -9,10 +9,10 @@
     <meta name="author" content="Juyeong Hwang">
     <title>Juyeong Hwang | Researcher</title>
 
-    <!-- Google Fonts -->
+    <!-- IBM Plex Sans — Kraken-Product / Kraken-Brand fallback -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -22,636 +22,518 @@
 </head>
 
 <body>
-    <!-- Interactive Canvas Background -->
 
-
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-        <i class="fas fa-moon" id="theme-icon"></i>
-    </button>
-
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <span class="logo-text">Juyeong Hwang</span>
-            </a>
-            <ul class="nav-menu">
+    <!-- ===== Navigation ===== -->
+    <header class="nav-wrap">
+        <nav class="nav container">
+            <a href="#hero" class="nav-logo">Juyeong Hwang</a>
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="#news" class="nav-link">News</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#biography" class="nav-link">Biography</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#publications" class="nav-link">Publications</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#awards" class="nav-link">Awards</a></li>
-                <li><a href="#activities" class="nav-link">Activities</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#personal" class="nav-link">Videos</a></li>
             </ul>
-            <div class="nav-toggle" id="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-actions">
+                <a href="mailto:05judy02@korea.ac.kr" class="btn btn-primary btn-sm">Contact</a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-bg">
-            <div class="gradient-sphere sphere-1"></div>
-            <div class="gradient-sphere sphere-2"></div>
-            <div class="gradient-sphere sphere-3"></div>
-            <div class="grid-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-intro">
-                <!-- Photo on the left -->
-                <div class="hero-image-container">
-                    <div class="hero-image-wrapper">
-                        <img src="image/profile.jpg" alt="Juyeong Hwang" class="hero-image">
+    <main>
+
+        <!-- ===== Hero ===== -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="hero-eyebrow">Ph.D. Student &middot; Computer Science, Korea University</span>
+                    <h1 class="hero-title">Researching natural<br><span class="accent">virtual agent motion</span></h1>
+                    <p class="hero-desc">I want to create technology that brings joy to people.</p>
+                    <div class="hero-tags">
+                        <span class="tag">Computer Graphics</span>
+                        <span class="tag">Virtual Agents</span>
+                        <span class="tag">Crowd Simulation</span>
+                        <span class="tag">Motion Synthesis</span>
+                        <span class="tag">Deep Learning</span>
                     </div>
-                    <div class="hero-image-glow"></div>
+                    <div class="hero-cta">
+                        <a href="#publications" class="btn btn-primary"><i class="fas fa-file-alt"></i> View
+                            Publications</a>
+                        <a href="#contact" class="btn btn-outlined"><i class="fas fa-envelope"></i> Get in Touch</a>
+                    </div>
                 </div>
-                <!-- Textual information -->
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="greeting">Hello, I'm</span>
-                        <span class="name">Juyeong Hwang</span>
-                    </h1>
-                    <p class="hero-description">
-                        I am interested in natural virtual agent motion.
-                    </p>
-                    <div class="hero-interests">
-                        <h4 style="font-size: 1rem; margin-bottom: 10px; color: var(--text-primary);">Research Interests
-                        </h4>
-                        <div class="interest-tags" style="display: flex; flex-wrap: wrap; gap: 8px;">
-                            <span class="tag">Computer Graphics</span>
-                            <span class="tag">Virtual Agents</span>
-                            <span class="tag">Crowd Simulation</span>
-                            <span class="tag">Motion Synthesis</span>
-                            <span class="tag">Deep Learning</span>
+                <div class="hero-photo">
+                    <img src="image/profile.jpg" alt="Juyeong Hwang" class="hero-photo-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== News ===== -->
+        <section id="news" class="section">
+            <div class="container">
+                <h2 class="section-heading">Recent News</h2>
+                <div class="news-card">
+                    <div class="news-row">
+                        <span class="news-date">2026.06.16</span>
+                        <p class="news-text">Internship <span class="badge badge-success">Started</span> @
+                            <strong>Kakao Mobility</strong></p>
+                    </div>
+                    <div class="news-row">
+                        <span class="news-date">2026.03.05</span>
+                        <p class="news-text">1 scholarship <span class="badge badge-success">Accepted</span> @
+                            <strong>WACV 2026</strong></p>
+                    </div>
+                    <div class="news-row">
+                        <span class="news-date">2026.01.26</span>
+                        <p class="news-text">1 paper <span class="badge badge-success">Accepted</span> @
+                            <strong>ICLR 2026</strong></p>
+                    </div>
+                    <div class="news-row">
+                        <span class="news-date">2025.12.23</span>
+                        <p class="news-text">1 paper <span class="badge badge-success">Accepted</span> @
+                            <strong>CVM 2026</strong></p>
+                    </div>
+                    <div class="news-row">
+                        <span class="news-date">2025.12.17</span>
+                        <p class="news-text">1 paper <span class="badge badge-neutral">Presented</span> @
+                            <strong>SIGGRAPH Asia 2025</strong></p>
+                    </div>
+                    <div class="news-row">
+                        <span class="news-date">2025.11.17</span>
+                        <p class="news-text">1 paper (Oral) <span class="badge badge-success">Accepted</span> @
+                            <strong>WACV 2026</strong></p>
+                    </div>
+                    <div class="news-row">
+                        <span class="news-date">2025.08.16</span>
+                        <p class="news-text">1 paper <span class="badge badge-success">Accepted</span> @
+                            <strong>SIGGRAPH Asia 2025</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Biography ===== -->
+        <section id="biography" class="section section-alt">
+            <div class="container">
+                <h2 class="section-heading">Biography</h2>
+                <div class="card stack">
+                    <div class="entry">
+                        <span class="entry-period">Sep. 2023 — Present</span>
+                        <h4 class="entry-title">Korea University</h4>
+                        <p class="entry-sub">Ph.D. Student, Computer Science</p>
+                        <p class="entry-note">Research interest: <a href="#publications">Computer Graphics</a></p>
+                    </div>
+                    <div class="entry">
+                        <span class="entry-period">Mar. 2019 — Aug. 2023</span>
+                        <h4 class="entry-title">Kyung Hee University</h4>
+                        <p class="entry-sub">Bachelor, Software Convergence (Game Contents Track)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Experience ===== -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-heading">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-body">
+                            <span class="entry-period">Jun. 2022 — Aug. 2022</span>
+                            <h4 class="entry-title">KIST</h4>
+                            <div class="entry-tags">
+                                <span>#intern</span>
+                                <span>#VR-sickness</span>
+                                <span>#research-assistant</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="hero-cta" style="margin-top: 30px;">
-                        <a href="#publications" class="btn btn-primary">
-                            <i class="fas fa-file-alt"></i>
-                            View Publications
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <i class="fas fa-envelope"></i>
-                            Get in Touch
-                        </a>
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-body">
+                            <span class="entry-period">Sep. 2022 — Feb. 2023</span>
+                            <h4 class="entry-title">Pearl Abyss</h4>
+                            <div class="entry-tags">
+                                <span>#talent-training-program</span>
+                                <span>#SPH-simulation</span>
+                                <span>#crowd-application</span>
+                                <a href="https://www.youtube.com/watch?v=BEWHivbiTg8" target="_blank"
+                                    class="entry-tag-link">#watch-video</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-body">
+                            <span class="entry-period">Sep. 2023 — Feb. 2024</span>
+                            <h4 class="entry-title">IIIXR Lab</h4>
+                            <div class="entry-tags">
+                                <span>#intern</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-body">
+                            <span class="entry-period">Sep. 2023 — Feb. 2024</span>
+                            <h4 class="entry-title">NC</h4>
+                            <div class="entry-tags">
+                                <span>#fellowship-program</span>
+                                <span>#motion-generation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-body">
+                            <span class="entry-period">2025 — 2026</span>
+                            <h4 class="entry-title">LG</h4>
+                            <div class="entry-tags">
+                                <span>#multimodal-service-agent-framework</span>
+                                <span>#LLM</span>
+                                <span>#RAG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-body">
+                            <span class="entry-period">Jun. 2026 — Dec. 2026</span>
+                            <h4 class="entry-title">Kakao Mobility</h4>
+                            <div class="entry-tags">
+                                <span>#autonomous-driving</span>
+                                <span>#simulator</span>
+                                <span>#WOSAC-1st-place</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Recent News on the Right -->
-            <div class="hero-news-panel glass-card">
-                <h3><i class="fas fa-newspaper"></i> Recent News</h3>
-                <div class="hero-news-list">
-                    <div class="news-item-sm">
-                        <span class="news-date-sm">2026.03.05</span>
-                        <p>1 scholarship <span class="news-badge accepted">Accepted</span> @ <strong>WACV 2026</strong>
-                        </p>
-                    </div>
-                    <div class="news-item-sm">
-                        <span class="news-date-sm">2026.01.26</span>
-                        <p>1 paper <span class="news-badge accepted">Accepted</span> @ <strong>ICLR 2026</strong></p>
-                    </div>
-                    <div class="news-item-sm">
-                        <span class="news-date-sm">2025.12.23</span>
-                        <p>1 paper <span class="news-badge accepted">Accepted</span> @ <strong>CVM 2026</strong></p>
-                    </div>
-                    <div class="news-item-sm">
-                        <span class="news-date-sm">2025.12.17</span>
-                        <p>1 paper <span class="news-badge presented">Presented</span> @ <strong>SIGGRAPH Asia
-                                2025</strong></p>
-                    </div>
-                    <div class="news-item-sm">
-                        <span class="news-date-sm">2025.11.17</span>
-                        <p>1 paper (Oral) <span class="news-badge accepted">Accepted</span> @ <strong>WACV 2026</strong>
-                        </p>
-                    </div>
-                    <div class="news-item-sm">
-                        <span class="news-date-sm">2025.08.16</span>
-                        <p>1 paper <span class="news-badge accepted">Accepted</span> @ <strong>SIGGRAPH Asia
-                                2025</strong></p>
-                    </div>
-                </div>
-            </div>
+        <!-- ===== Publications ===== -->
+        <section id="publications" class="section section-alt">
+            <div class="container">
+                <h2 class="section-heading">Publications</h2>
 
-            <div class="hero-scroll">
-                <a href="#biography" class="scroll-indicator">
-                    <span>Scroll Down</span>
-                    <i class="fas fa-chevron-down"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+                <div class="year-label">Preprints &amp; Under Review</div>
 
-    <!-- News Section Removed (Moved to Hero) -->
-
-    <!-- About Section Removed (Moved to Hero) -->
-
-    <!-- Biography Section (Education + Activities) -->
-    <section id="biography" class="section biography">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon"><i class="fas fa-user-graduate"></i></span>
-                Biography
-            </h2>
-            <div class="biography-grid">
-                <!-- Left Column: Education -->
-                <div class="bio-column">
-                    <h3>Education</h3>
-                    <!-- Korea University -->
-                    <div class="bio-item">
-                        <span class="bio-year">Sep.2023 - present</span>
-                        <h4 class="bio-title">Korea University</h4>
-                        <p class="bio-org">Doctor of Philosophy - Ph.D. Student, Computer Science</p>
-                        <p class="bio-desc">
-                            Research Interest: <span class="highlight">Computer Graphics</span>
-                        </p>
-                    </div>
-
-                    <!-- Kyung Hee University -->
-                    <div class="bio-item">
-                        <span class="bio-year">Mar.2019 - Aug.2023</span>
-                        <h4 class="bio-title">Kyung Hee University</h4>
-                        <p class="bio-org">Bachelor, Software Convergence</p>
-                    </div>
-                </div>
-
-                <!-- Right Column: Activities -->
-                <div class="bio-column">
-                    <h3>Activities</h3>
-                    <!-- Activity 1 -->
-                    <div class="bio-item">
-                        <span class="bio-year">2021</span>
-                        <h4 class="bio-title">Director of PR</h4>
-                        <p class="bio-org">College of Software & Convergence Student Council</p>
-                    </div>
-
-
-
-                    <!-- Activity 3 -->
-                    <div class="bio-item">
-                        <span class="bio-year">2021.03 - 2023.08.31</span>
-                        <h4 class="bio-title">Club Ludens</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section experience">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon"><i class="fas fa-briefcase"></i></span>
-                Experience
-            </h2>
-            <div class="awards-timeline">
-                <!-- IIIXR Lab -->
-                <div class="timeline-item glass-card">
-                    <div class="timeline-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">Sep.2023 - Feb.2024</span>
-                        <h3 class="award-title">IIIXR Lab</h3>
-                        <p class="award-org">Intern</p>
-                    </div>
-                </div>
-
-                <!-- KIST -->
-                <div class="timeline-item glass-card">
-                    <div class="timeline-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">Jun.2022 - Aug.2022</span>
-                        <h3 class="award-title">KIST</h3>
-                        <p class="award-org">Intern</p>
-                        <p class="award-description">
-                            VR sickness, Research Assistant
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="section publications">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon"><i class="fas fa-book-open"></i></span>
-                Publications
-            </h2>
-
-            <!-- Year Separator -->
-            <div class="year-separator">
-                <span>2026</span>
-            </div>
-
-            <div class="publications-list">
-                <!-- Publication 1 - Event-T2M -->
-                <article class="publication-card glass-card">
-                    <div class="pub-thumbnail">
-                        <img src="image/ICLR.png" alt="Event-T2M" class="pub-thumbnail-img">
-                    </div>
-                    <div class="pub-content">
-                        <h3 class="pub-title">Event-T2M: Event-level Conditioning for Complex Text-to-Motion Synthesis
-                        </h3>
-                        <p class="pub-authors">
-                            Seong-Eun Hong<sup>*</sup>, Jaeyoung Seon<sup>*</sup>, <strong>Juyeong Hwang</strong>,
-                            JongHwan Shin, and HyeongYeop Kang
-                        </p>
-                        <p class="pub-venue">
-                            <span class="venue-name">ICLR 2026</span>
-                            <span class="pub-type">Conference Paper</span>
-                        </p>
-                        <p class="pub-meta">
-                            <i class="fas fa-map-marker-alt"></i> Rio de Janeiro, Brazil | Apr. 23-27, 2026
-                        </p>
-                        <p class="pub-abstract">
-                            A novel approach for event-level conditioning in text-to-motion synthesis,
-                            enabling complex and nuanced motion generation from text descriptions.
-                        </p>
+                <!-- CrowdVLA -->
+                <article class="pub-card">
+                    <div class="pub-body">
+                        <div class="pub-badges">
+                            <span class="badge badge-purple">arXiv</span>
+                            <span class="badge badge-neutral">Preprint</span>
+                        </div>
+                        <h3 class="pub-title">CrowdVLA: Embodied Vision-Language-Action Agents for Context-Aware Crowd
+                            Simulation</h3>
+                        <p class="pub-authors"><strong>Juyeong Hwang</strong><sup>*</sup>, Seong-Eun
+                            Hong<sup>*</sup>, Jinhyun Kim, JaeYoung Seon, Giljoo Nam, Hanyoung Jang, and HyeongYeop
+                            Kang</p>
                         <div class="pub-links">
-                            <a href="http://arxiv.org/abs/2602.04292" target="_blank" class="pub-link">
-                                <i class="fas fa-file-pdf"></i> Paper
-                            </a>
-                            <a href="https://github.com/tjswodud/EventT2M-codes" target="_blank" class="pub-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="https://tjswodud.github.io/EventT2M/" target="_blank" class="pub-link">
-                                <i class="fas fa-globe"></i> Project Page
-                            </a>
-                            <a href="#" class="pub-link">
-                                <i class="fas fa-play-circle"></i> Video
-                            </a>
+                            <a href="https://arxiv.org/abs/2604.05525" target="_blank" class="btn btn-subtle btn-sm"><i
+                                    class="fas fa-file-pdf"></i> Paper</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Publication 2 - ORACLE -->
-                <article class="publication-card glass-card">
-                    <div class="pub-thumbnail">
-                        <img src="image/CVM.png" alt="ORACLE" class="pub-thumbnail-img">
+                <!-- Seeing Beyond the Next Step -->
+                <article class="pub-card">
+                    <div class="pub-body">
+                        <div class="pub-badges">
+                            <span class="badge badge-neutral">Under Review</span>
+                        </div>
+                        <h3 class="pub-title">Seeing Beyond the Next Step: World-Model-Guided Human-Like Navigation in
+                            Multi-Agent Scenes</h3>
+                        <p class="pub-authors">Seong-Eun Hong<sup>*</sup>, <strong>Juyeong Hwang</strong><sup>*</sup>,
+                            Jinhyun Kim, Hanyoung Jang, and HyeongYeop Kang</p>
                     </div>
-                    <div class="pub-content">
+                </article>
+
+                <!-- ADIScene -->
+                <article class="pub-card">
+                    <div class="pub-body">
+                        <div class="pub-badges">
+                            <span class="badge badge-neutral">Under Review</span>
+                        </div>
+                        <h3 class="pub-title">ADIScene: Affordance-Guided Diffusion for Interaction-Feasible 3D Scene
+                            Generation</h3>
+                        <p class="pub-authors">Misong Kim<sup>*</sup>, <strong>Juyeong Hwang</strong><sup>*</sup>,
+                            SeungJeh Chung, Jaeyoung Seon, Ri Yu, and HyeongYeop Kang</p>
+                    </div>
+                </article>
+
+                <div class="year-label">2026</div>
+
+                <!-- Event-T2M -->
+                <article class="pub-card">
+                    <div class="pub-thumb">
+                        <img src="image/ICLR.png" alt="Event-T2M">
+                    </div>
+                    <div class="pub-body">
+                        <div class="pub-badges">
+                            <span class="badge badge-purple">ICLR 2026</span>
+                            <span class="badge badge-neutral">Conference Paper</span>
+                        </div>
+                        <h3 class="pub-title">Event-T2M: Event-level Conditioning for Complex Text-to-Motion
+                            Synthesis</h3>
+                        <p class="pub-authors">Seong-Eun Hong<sup>*</sup>, Jaeyoung Seon<sup>*</sup>, <strong>Juyeong
+                                Hwang</strong>, JongHwan Shin, and HyeongYeop Kang</p>
+                        <p class="pub-meta"><i class="fas fa-map-marker-alt"></i> Rio de Janeiro, Brazil &middot; Apr.
+                            23-27, 2026</p>
+                        <p class="pub-abstract">A novel approach for event-level conditioning in text-to-motion
+                            synthesis, enabling complex and nuanced motion generation from text descriptions.</p>
+                        <div class="pub-links">
+                            <a href="http://arxiv.org/abs/2602.04292" target="_blank" class="btn btn-subtle btn-sm"><i
+                                    class="fas fa-file-pdf"></i> Paper</a>
+                            <a href="https://github.com/tjswodud/EventT2M-codes" target="_blank"
+                                class="btn btn-subtle btn-sm"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://tjswodud.github.io/EventT2M/" target="_blank"
+                                class="btn btn-subtle btn-sm"><i class="fas fa-globe"></i> Project Page</a>
+                            <a href="#" class="btn btn-subtle btn-sm"><i class="fas fa-play-circle"></i> Video</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ORACLE -->
+                <article class="pub-card">
+                    <div class="pub-thumb">
+                        <img src="image/CVM.png" alt="ORACLE">
+                    </div>
+                    <div class="pub-body">
+                        <div class="pub-badges">
+                            <span class="badge badge-purple">CVM 2026</span>
+                            <span class="badge badge-neutral">Conference Paper</span>
+                        </div>
                         <h3 class="pub-title">ORACLE: Orchestrate NPC Daily Activities using Contrastive Learning with
                             Transformer-CVAE</h3>
-                        <p class="pub-authors">
-                            Seong-Eun Hong, <strong>Juyeong Hwang</strong>, Ryunha Lee, and HyeongYeop Kang
-                        </p>
-                        <p class="pub-venue">
-                            <span class="venue-name">CVM 2026</span>
-                            <span class="pub-type">Conference Paper</span>
-                        </p>
-                        <p class="pub-meta">
-                            <i class="fas fa-map-marker-alt"></i> Seoul, South Korea | Apr. 2026
-                        </p>
-                        <p class="pub-abstract">
-                            A framework for orchestrating NPC daily activities using contrastive learning
-                            combined with Transformer-CVAE architecture for realistic virtual agent behaviors.
-                        </p>
+                        <p class="pub-authors">Seong-Eun Hong, <strong>Juyeong Hwang</strong>, Ryunha Lee, and
+                            HyeongYeop Kang</p>
+                        <p class="pub-meta"><i class="fas fa-map-marker-alt"></i> Seoul, South Korea &middot; Apr.
+                            2026</p>
+                        <p class="pub-abstract">A framework for orchestrating NPC daily activities using contrastive
+                            learning combined with Transformer-CVAE architecture for realistic virtual agent
+                            behaviors.</p>
                         <div class="pub-links">
-                            <a href="#" class="pub-link">
-                                <i class="fas fa-file-pdf"></i> Paper
-                            </a>
-                            <a href="#" class="pub-link">
-                                <i class="fas fa-play-circle"></i> Video
-                            </a>
+                            <a href="#" class="btn btn-subtle btn-sm"><i class="fas fa-file-pdf"></i> Paper</a>
+                            <a href="#" class="btn btn-subtle btn-sm"><i class="fas fa-play-circle"></i> Video</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Publication 3 - BiPO -->
-                <article class="publication-card glass-card">
-                    <div class="pub-thumbnail">
-                        <img src="image/WACV.png" alt="BiPO" class="pub-thumbnail-img">
+                <!-- BiPO -->
+                <article class="pub-card">
+                    <div class="pub-thumb">
+                        <img src="image/WACV.png" alt="BiPO">
                     </div>
-                    <div class="pub-content">
-                        <h3 class="pub-title">BiPO: Bidirectional Partial Occlusion Network for Text-to-Motion Synthesis
-                        </h3>
-                        <p class="pub-authors">
-                            Seong-Eun Hong, Soobin Lim, <strong>Juyeong Hwang</strong>, Minwook Chang, and HyeongYeop
-                            Kang
-                        </p>
-                        <p class="pub-venue">
-                            <span class="venue-name">WACV 2026</span>
-                            <span class="pub-type">Conference Paper</span> <span class="pub-type oral">Oral
-                                Presentation</span>
-                        </p>
-                        <p class="pub-meta">
-                            <i class="fas fa-map-marker-alt"></i> Tucson, Arizona, USA | Mar. 6-10, 2026
-                        </p>
-                        <p class="pub-abstract">
-                            A bidirectional partial occlusion network designed for improved text-to-motion synthesis,
-                            achieving state-of-the-art performance and selected for oral presentation.
-                        </p>
+                    <div class="pub-body">
+                        <div class="pub-badges">
+                            <span class="badge badge-purple">WACV 2026</span>
+                            <span class="badge badge-neutral">Conference Paper</span>
+                            <span class="badge badge-success">Oral Presentation</span>
+                        </div>
+                        <h3 class="pub-title">BiPO: Bidirectional Partial Occlusion Network for Text-to-Motion
+                            Synthesis</h3>
+                        <p class="pub-authors">Seong-Eun Hong, Soobin Lim, <strong>Juyeong Hwang</strong>, Minwook
+                            Chang, and HyeongYeop Kang</p>
+                        <p class="pub-meta"><i class="fas fa-map-marker-alt"></i> Tucson, Arizona, USA &middot; Mar.
+                            6-10, 2026</p>
+                        <p class="pub-abstract">A bidirectional partial occlusion network designed for improved
+                            text-to-motion synthesis, achieving state-of-the-art performance and selected for oral
+                            presentation.</p>
                         <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2412.00112" target="_blank" class="pub-link">
-                                <i class="fas fa-file-pdf"></i> Paper
-                            </a>
-                            <a href="https://github.com/seoneun/BiPO-codes" target="_blank" class="pub-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="https://seoneun.github.io/BiPO-page/" target="_blank" class="pub-link">
-                                <i class="fas fa-globe"></i> Project Page
-                            </a>
-                            <a href="https://www.youtube.com/watch?v=gzCGyC8ocus" target="_blank" class="pub-link">
-                                <i class="fas fa-play-circle"></i> Video
-                            </a>
+                            <a href="https://arxiv.org/abs/2412.00112" target="_blank" class="btn btn-subtle btn-sm"><i
+                                    class="fas fa-file-pdf"></i> Paper</a>
+                            <a href="https://github.com/seoneun/BiPO-codes" target="_blank"
+                                class="btn btn-subtle btn-sm"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://seoneun.github.io/BiPO-page/" target="_blank"
+                                class="btn btn-subtle btn-sm"><i class="fas fa-globe"></i> Project Page</a>
+                            <a href="https://www.youtube.com/watch?v=gzCGyC8ocus" target="_blank"
+                                class="btn btn-subtle btn-sm"><i class="fas fa-play-circle"></i> Video</a>
                         </div>
                     </div>
                 </article>
-            </div>
 
-            <!-- Year Separator -->
-            <div class="year-separator">
-                <span>2025</span>
-            </div>
+                <div class="year-label">2025</div>
 
-            <div class="publications-list">
-                <!-- Publication 4 - Virtual Agent Head Rotation -->
-                <article class="publication-card glass-card">
-                    <div class="pub-thumbnail">
-                        <img src="image/Siggraphasia.png" alt="Virtual Agent Head Rotation" class="pub-thumbnail-img">
+                <!-- SIGGRAPH Asia -->
+                <article class="pub-card">
+                    <div class="pub-thumb">
+                        <img src="image/Siggraphasia.png" alt="Virtual Agent Head Rotation">
                     </div>
-                    <div class="pub-content">
+                    <div class="pub-body">
+                        <div class="pub-badges">
+                            <span class="badge badge-purple">SIGGRAPH Asia 2025</span>
+                            <span class="badge badge-neutral">Conference Paper</span>
+                            <span class="badge badge-success">Oral Presentation</span>
+                        </div>
                         <h3 class="pub-title">How Does a Virtual Agent Decide Where to Look? Symbolic Cognitive
                             Reasoning for Embodied Head Rotation</h3>
-                        <p class="pub-authors">
-                            <strong>Juyeong Hwang</strong><sup>*</sup>, Seong-Eun Hong<sup>*</sup>, Jaeyoung Seon, and
-                            HyeongYeop Kang
+                        <p class="pub-authors"><strong>Juyeong Hwang</strong><sup>*</sup>, Seong-Eun Hong<sup>*</sup>,
+                            Jaeyoung Seon, and HyeongYeop Kang</p>
+                        <p class="pub-meta"><i class="fas fa-map-marker-alt"></i> Hong Kong &middot; Dec. 15-18, 2025
                         </p>
-                        <p class="pub-venue">
-                            <span class="venue-name">SIGGRAPH Asia 2025</span>
-                            <span class="pub-type">Conference Paper</span> <span class="pub-type oral">Oral
-                                Presentation</span>
-                        </p>
-                        <p class="pub-meta">
-                            <i class="fas fa-map-marker-alt"></i> Hong Kong | Dec. 15-18, 2025
-                        </p>
-                        <p class="pub-abstract">
-                            A novel framework for symbolic cognitive reasoning enabling virtual agents to make
-                            natural head rotation decisions in embodied environments.
-                        </p>
+                        <p class="pub-abstract">A novel framework for symbolic cognitive reasoning enabling virtual
+                            agents to make natural head rotation decisions in embodied environments.</p>
                         <div class="pub-links">
-                            <a href="https://dl.acm.org/doi/10.1145/3757377.3763849" target="_blank" class="pub-link">
-                                <i class="fas fa-file-pdf"></i> Paper
-                            </a>
-                            <a href="https://www.youtube.com/watch?v=S9Tvx3NQSh8&t=3s" target="_blank" class="pub-link">
-                                <i class="fas fa-play-circle"></i> Video
-                            </a>
+                            <a href="https://dl.acm.org/doi/10.1145/3757377.3763849" target="_blank"
+                                class="btn btn-subtle btn-sm"><i class="fas fa-file-pdf"></i> Paper</a>
+                            <a href="https://www.youtube.com/watch?v=S9Tvx3NQSh8&t=3s" target="_blank"
+                                class="btn btn-subtle btn-sm"><i class="fas fa-play-circle"></i> Video</a>
                         </div>
                     </div>
                 </article>
+
             </div>
+        </section>
 
-            <!-- Year Separator -->
-
-
-        </div>
-        </div>
-    </section>
-
-
-
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon"><i class="fas fa-code-branch"></i></span>
-                Projects
-            </h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <article class="project-card glass-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Multimodal Service Agent Framework</h3>
-                        <p class="project-description">
-                            Development of a Multimodal Information-Driven Service Agent Framework.
-                            <br>
-                            <span class="timeline-year">2025 - 2026</span>
-                        </p>
-                    </div>
-                </article>
-
-                <!-- Project 2 -->
-                <article class="project-card glass-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Pearl Abyss Talent Training Program</h3>
-                        <p class="project-description">
-                            <span class="timeline-year">2022.09 - 2023.02</span>
-                        </p>
-                        <a href="https://www.youtube.com/watch?v=BEWHivbiTg8" target="_blank" class="project-link-btn">
-                            <i class="fab fa-youtube"></i> Watch Video
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Project 3 -->
-                <article class="project-card glass-card">
-                    <div class="project-content">
-                        <h3 class="project-title">NC Fellowship Program</h3>
-                        <p class="project-description">
-                            <span class="timeline-year">2023.09 - 2024.02</span>
-                        </p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Awards Section -->
-    <section id="awards" class="section awards">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon"><i class="fas fa-trophy"></i></span>
-                Awards & Honors
-            </h2>
-            <div class="awards-timeline">
-                <div class="timeline-item glass-card">
-                    <div class="timeline-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2026</span>
-                        <h3 class="award-title">WACV 2026 Broadening Participant Travel Grant Award</h3>
-                    </div>
-                </div>
-
-                <div class="timeline-item glass-card">
-                    <div class="timeline-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2023</span>
-                        <h3 class="award-title">Excellence Award</h3>
-                        <p class="award-org">Kyung Hee University SW Festival</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item glass-card">
-                    <div class="timeline-icon">
-                        <i class="fas fa-crown"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2020</span>
-                        <h3 class="award-title">Grand Prize</h3>
-                        <p class="award-org">Kyung Hee University KHUTHON</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Activities Section Removed (Moved to Biography) -->
-
-
-
-    <!-- Personal Section (Seminars + Projects) -->
-    <section id="personal" class="section personal">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon"><i class="fas fa-play-circle"></i></span>
-                Personal
-            </h2>
-            <div class="personal-grid">
-                <!-- Left Column: Seminars -->
-                <div class="personal-column">
-                    <h3>Seminars</h3>
-                    <div class="video-list">
-                        <div class="video-card seminar-card-white">
-                            <iframe src="https://www.youtube.com/embed/6qI-85BofSg?start=73" title="YouTube video"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="video-card seminar-card-white">
-                            <iframe src="https://www.youtube.com/embed/ZSrBf2tkPRE?start=0" title="YouTube video"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="video-card seminar-card-white">
-                            <iframe src="https://www.youtube.com/embed/ecuJM7G3fwg" title="YouTube video"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="video-card seminar-card-white">
-                            <iframe src="https://www.youtube.com/embed/rG4rsSGa8ZM" title="YouTube video"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="video-card seminar-card-white">
-                            <iframe src="https://www.youtube.com/embed/QsV7tY705Dk" title="YouTube video"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+        <!-- ===== Awards ===== -->
+        <section id="awards" class="section section-alt">
+            <div class="container">
+                <h2 class="section-heading">Awards &amp; Honors</h2>
+                <div class="card stack">
+                    <div class="entry award-entry">
+                        <span class="award-icon"><i class="fas fa-trophy"></i></span>
+                        <div>
+                            <span class="entry-period">2026</span>
+                            <h4 class="entry-title">WACV 2026 Broadening Participant Travel Grant Award</h4>
                         </div>
                     </div>
-                </div>
-
-                <!-- Right Column: Projects -->
-                <div class="personal-column">
-                    <h3>Projects</h3>
-                    <div class="video-list">
-                        <div class="video-card seminar-card-white">
-                            <iframe src="https://www.youtube.com/embed/LIoT5S8Exvc" title="YouTube video"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                    <div class="entry award-entry">
+                        <span class="award-icon"><i class="fas fa-award"></i></span>
+                        <div>
+                            <span class="entry-period">2023</span>
+                            <h4 class="entry-title">Excellence Award</h4>
+                            <p class="entry-sub">Kyung Hee University SW Festival</p>
                         </div>
-                        <div class="video-card seminar-card-white">
-                            <iframe src="https://www.youtube.com/embed/KzN3fV2J-3w" title="YouTube video"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="video-card seminar-card-white">
-                            <iframe src="https://www.youtube.com/embed/qqjKbXYRbc8" title="YouTube video"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                    </div>
+                    <div class="entry award-entry">
+                        <span class="award-icon"><i class="fas fa-crown"></i></span>
+                        <div>
+                            <span class="entry-period">2020</span>
+                            <h4 class="entry-title">Grand Prize</h4>
+                            <p class="entry-sub">Kyung Hee University KHUTHON</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-icon"><i class="fas fa-paper-plane"></i></span>
-                Get in Touch
-            </h2>
-            <div class="contact-content">
-                <div class="contact-info glass-card">
-                    <p class="contact-intro">
-                        I'm always open to discussing new research collaborations,
-                        interesting projects, or opportunities in graphics.
-                    </p>
-                    <div class="contact-items">
-                        <a href="mailto:05judy02@korea.ac.kr" class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>Email Me</span>
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=4HdW06gAAAAJ&hl=ko" target="_blank"
-                            class="contact-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>Google Scholar</span>
-                        </a>
-                        <a href="https://github.com/JuyeongHwang" target="_blank" class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://kr.linkedin.com/in/juyeong-hwang-89b165332?trk=people-guest_people_search-card"
-                            target="_blank" class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                    </div>
+        <!-- ===== Videos ===== -->
+        <section id="personal" class="section">
+            <div class="container">
+                <h2 class="section-heading">Videos</h2>
+                <div class="video-filters" id="video-filters">
+                    <button class="filter-chip active" data-filter="all">All</button>
+                    <button class="filter-chip" data-filter="seminar">#seminar</button>
+                    <button class="filter-chip" data-filter="project">#project</button>
                 </div>
-                <div class="contact-social">
-                    <a href="mailto:05judy02@korea.ac.kr" class="social-btn" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+                <div class="video-scroller-wrap">
+                    <button class="scroll-arrow left" id="scroll-left" aria-label="Scroll left"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <div class="video-scroller" id="video-scroller">
+                        <div class="video-item" data-tags="seminar">
+                            <div class="video-frame"><iframe
+                                    src="https://www.youtube.com/embed/6qI-85BofSg?start=73" title="Seminar video"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></div>
+                            <div class="video-tags"><span>#seminar</span></div>
+                        </div>
+                        <div class="video-item" data-tags="seminar">
+                            <div class="video-frame"><iframe src="https://www.youtube.com/embed/ZSrBf2tkPRE?start=0"
+                                    title="Seminar video" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></div>
+                            <div class="video-tags"><span>#seminar</span></div>
+                        </div>
+                        <div class="video-item" data-tags="seminar">
+                            <div class="video-frame"><iframe src="https://www.youtube.com/embed/ecuJM7G3fwg"
+                                    title="Seminar video" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></div>
+                            <div class="video-tags"><span>#seminar</span></div>
+                        </div>
+                        <div class="video-item" data-tags="seminar">
+                            <div class="video-frame"><iframe src="https://www.youtube.com/embed/rG4rsSGa8ZM"
+                                    title="Seminar video" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></div>
+                            <div class="video-tags"><span>#seminar</span></div>
+                        </div>
+                        <div class="video-item" data-tags="seminar">
+                            <div class="video-frame"><iframe src="https://www.youtube.com/embed/QsV7tY705Dk"
+                                    title="Seminar video" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></div>
+                            <div class="video-tags"><span>#seminar</span></div>
+                        </div>
+                        <div class="video-item" data-tags="project">
+                            <div class="video-frame"><iframe src="https://www.youtube.com/embed/LIoT5S8Exvc"
+                                    title="Project video" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></div>
+                            <div class="video-tags"><span>#project</span></div>
+                        </div>
+                        <div class="video-item" data-tags="project">
+                            <div class="video-frame"><iframe src="https://www.youtube.com/embed/KzN3fV2J-3w"
+                                    title="Project video" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></div>
+                            <div class="video-tags"><span>#project</span></div>
+                        </div>
+                        <div class="video-item" data-tags="project">
+                            <div class="video-frame"><iframe src="https://www.youtube.com/embed/qqjKbXYRbc8"
+                                    title="Project video" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></div>
+                            <div class="video-tags"><span>#project</span></div>
+                        </div>
+                    </div>
+                    <button class="scroll-arrow right" id="scroll-right" aria-label="Scroll right"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Contact ===== -->
+        <section id="contact" class="section section-contact">
+            <div class="container contact-inner">
+                <h2 class="section-heading">Get in Touch</h2>
+                <p class="body-text contact-intro">I'm always open to discussing new research collaborations,
+                    interesting projects, or opportunities in graphics.</p>
+                <div class="contact-actions">
+                    <a href="mailto:05judy02@korea.ac.kr" class="btn btn-primary"><i class="fas fa-envelope"></i>
+                        Email Me</a>
                     <a href="https://scholar.google.com/citations?user=4HdW06gAAAAJ&hl=ko" target="_blank"
-                        class="social-btn" aria-label="Google Scholar">
-                        <i class="fas fa-graduation-cap"></i>
-                    </a>
-                    <a href="https://github.com/JuyeongHwang" target="_blank" class="social-btn" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://kr.linkedin.com/in/juyeong-hwang-89b165332?trk=people-guest_people_search-card"
-                        target="_blank" class="social-btn" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+                        class="btn btn-outlined"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                    <a href="https://github.com/JuyeongHwang" target="_blank" class="btn btn-outlined"><i
+                            class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/juyeong-hwang-89b165332"
+                        target="_blank" class="btn btn-outlined"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+    </main>
+
+    <!-- ===== Footer ===== -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="footer-text">
-                    © 2026 Juyeong Hwang. All rights reserved.
-                </p>
-                <p class="footer-credit">
-                    Designed with <i class="fas fa-heart"></i> for beautiful research
-                </p>
+        <div class="container footer-inner">
+            <p>&copy; 2026 Juyeong Hwang. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="mailto:05judy02@korea.ac.kr" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://scholar.google.com/citations?user=4HdW06gAAAAJ&hl=ko" target="_blank"
+                    aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://github.com/JuyeongHwang" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/juyeong-hwang-89b165332"
+                    target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
