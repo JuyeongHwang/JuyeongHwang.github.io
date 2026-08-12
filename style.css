@@ -620,17 +620,32 @@ section[id] {
 .entry-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 2px 8px;
-    margin-top: 2px;
-    font-size: 13px;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.entry-tags span,
+.entry-tag-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--gray-subtle);
+    color: var(--neutral-badge-text);
+    font-size: 12px;
     font-weight: 500;
-    color: var(--purple);
+    line-height: 1.33;
+    padding: 3px 8px;
+    border-radius: 8px;
 }
 
 .entry-tag-link {
-    font-size: 13px;
-    font-weight: 500;
-    text-decoration: underline;
+    background: var(--purple-subtle);
+    color: var(--purple-deep);
+}
+
+.entry-tag-link:hover {
+    background: rgba(133, 91, 251, 0.24);
+    color: var(--purple-deep);
 }
 
 /* ==========================================================================
@@ -660,33 +675,8 @@ section[id] {
    Videos — horizontal drag scroller with tag filters
    ========================================================================== */
 
-.video-filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-
-.filter-chip {
-    background: var(--gray-subtle);
-    color: var(--cool-gray);
-    border: none;
-    border-radius: 8px;
-    padding: 6px 14px;
-    font-family: var(--font-ui);
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color .15s ease, color .15s ease;
-}
-
-.filter-chip:hover {
-    color: var(--ink);
-}
-
-.filter-chip.active {
-    background: var(--purple-subtle);
-    color: var(--purple-deep);
+.video-row-gap {
+    margin-top: 32px;
 }
 
 .video-scroller-wrap {
@@ -721,16 +711,15 @@ section[id] {
     gap: 8px;
 }
 
-.video-item.hidden {
-    display: none;
+.video-caption {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
 }
 
-.video-tags {
-    display: flex;
-    gap: 8px;
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--purple);
+.video-caption .tag {
+    font-size: 12px;
+    padding: 3px 8px;
 }
 
 .scroll-arrow {

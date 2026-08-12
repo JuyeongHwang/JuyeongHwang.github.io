@@ -1,5 +1,5 @@
 // Juyeong Hwang — Kraken-inspired skin
-// Mobile nav disclosure + video scroller (drag, arrows, tag filters).
+// Mobile nav disclosure + horizontal video scrollers (drag + arrows).
 
 (function () {
     'use strict';
@@ -18,14 +18,17 @@
         });
     }
 
-    // Video scroller
-    var scroller = document.getElementById('video-scroller');
-    if (scroller) {
+    // Video scrollers (one per row)
+    document.querySelectorAll('.video-scroller-wrap').forEach(function (wrap) {
+        var scroller = wrap.querySelector('.video-scroller');
+        if (!scroller) return;
+
         // YouTube iframes can nudge the scroller while loading — pin it back to the start
         window.addEventListener('load', function () {
             scroller.scrollTo({ left: 0 });
         });
-        // Drag to scroll (starts on gaps/tags; iframes swallow their own clicks)
+
+        // Drag to scroll (starts on gaps/captions; iframes swallow their own clicks)
         var isDown = false;
         var startX = 0;
         var startScroll = 0;
@@ -50,9 +53,9 @@
         scroller.addEventListener('pointercancel', endDrag);
 
         // Arrow buttons
-        var left = document.getElementById('scroll-left');
-        var right = document.getElementById('scroll-right');
         var STEP = 336; // card width + gap
+        var left = wrap.querySelector('.scroll-arrow.left');
+        var right = wrap.querySelector('.scroll-arrow.right');
         if (left) {
             left.addEventListener('click', function () {
                 scroller.scrollBy({ left: -STEP, behavior: 'smooth' });
@@ -63,23 +66,5 @@
                 scroller.scrollBy({ left: STEP, behavior: 'smooth' });
             });
         }
-
-        // Tag filters
-        var filters = document.getElementById('video-filters');
-        if (filters) {
-            filters.addEventListener('click', function (e) {
-                var chip = e.target.closest('.filter-chip');
-                if (!chip) return;
-                filters.querySelectorAll('.filter-chip').forEach(function (c) {
-                    c.classList.toggle('active', c === chip);
-                });
-                var filter = chip.dataset.filter;
-                scroller.querySelectorAll('.video-item').forEach(function (item) {
-                    var show = filter === 'all' || item.dataset.tags.split(' ').indexOf(filter) !== -1;
-                    item.classList.toggle('hidden', !show);
-                });
-                scroller.scrollTo({ left: 0 });
-            });
-        }
-    }
+    });
 })();
