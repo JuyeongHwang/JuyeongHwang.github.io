@@ -505,15 +505,13 @@ section[id] {
 
 .pub-thumb {
     flex-shrink: 0;
-    width: 220px;
-    align-self: flex-start;
+    width: 260px;
+    align-self: center;
 }
 
 .pub-thumb img {
     width: 100%;
-    aspect-ratio: 16 / 10;
-    object-fit: contain;
-    background: #ffffff;
+    height: auto;
     border-radius: 10px;
     border: 1px solid var(--border);
 }
