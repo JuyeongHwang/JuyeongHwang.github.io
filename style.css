@@ -512,7 +512,8 @@ section[id] {
 .pub-thumb img {
     width: 100%;
     aspect-ratio: 16 / 10;
-    object-fit: cover;
+    object-fit: contain;
+    background: #ffffff;
     border-radius: 10px;
     border: 1px solid var(--border);
 }
@@ -565,6 +566,19 @@ section[id] {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+}
+
+.pub-note {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 4px 0 16px 4px;
+}
+
+.pub-note-text {
+    font-size: 14px;
+    color: var(--cool-gray);
 }
 
 /* ==========================================================================
