@@ -774,6 +774,13 @@ section[id] {
     line-height: 1.3;
 }
 
+.video-year {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--silver);
+    margin-left: 2px;
+}
+
 .yt-link {
     display: inline-flex;
     align-items: center;
