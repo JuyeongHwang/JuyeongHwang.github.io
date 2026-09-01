@@ -28,13 +28,13 @@
             scroller.scrollTo({ left: 0 });
         });
 
-        // Drag to scroll (starts on gaps/captions; iframes swallow their own clicks)
+        // Drag to scroll (starts on gaps/captions; iframes and links keep their own clicks)
         var isDown = false;
         var startX = 0;
         var startScroll = 0;
 
         scroller.addEventListener('pointerdown', function (e) {
-            if (e.target.closest('iframe')) return;
+            if (e.target.closest('iframe, a')) return;
             isDown = true;
             startX = e.clientX;
             startScroll = scroller.scrollLeft;
