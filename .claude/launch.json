@@ -14,6 +14,12 @@
             "port": 4174
         },
         {
+            "name": "score-page",
+            "runtimeExecutable": "python3",
+            "runtimeArgs": ["-m", "http.server", "8791", "--directory", "/Users/dama.gochi/Documents/SCORE.github.io"],
+            "port": 8791
+        },
+        {
             "name": "tensorboard-mp-rl",
             "runtimeExecutable": "/Users/dama.gochi/miniforge3/envs/ros2/bin/tensorboard",
             "runtimeArgs": ["--logdir", "/Users/dama.gochi/Documents/Closed-Loop Simulator/runs", "--port", "6006", "--reload_interval", "15"],
