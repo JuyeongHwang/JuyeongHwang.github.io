@@ -8,6 +8,12 @@
             "port": 4173
         },
         {
+            "name": "seeing-beyond-page",
+            "runtimeExecutable": "python3",
+            "runtimeArgs": ["-m", "http.server", "4174", "--directory", "/Users/dama.gochi/Documents/SeeingBeyond"],
+            "port": 4174
+        },
+        {
             "name": "tensorboard-mp-rl",
             "runtimeExecutable": "/Users/dama.gochi/miniforge3/envs/ros2/bin/tensorboard",
             "runtimeArgs": ["--logdir", "/Users/dama.gochi/Documents/Closed-Loop Simulator/runs", "--port", "6006", "--reload_interval", "15"],
