@@ -122,15 +122,15 @@ p {
 
 .about {
     display: grid;
-    grid-template-columns: 170px minmax(0, 1fr);
+    grid-template-columns: 150px minmax(0, 1fr);
     gap: 32px;
     align-items: start;
     padding-top: 40px;
 }
 
 .about-photo {
-    width: 170px;
-    height: 170px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     object-position: 50% 20%;
     border-radius: 50%;
@@ -256,10 +256,6 @@ p {
     border-bottom: 0;
 }
 
-.pub-text-only {
-    grid-template-columns: minmax(0, 1fr);
-}
-
 .pub-img {
     aspect-ratio: 16 / 9;
     overflow: hidden;
@@ -309,11 +305,6 @@ p {
     font-size: 13px;
     font-weight: 700;
     color: var(--accent);
-}
-
-.pub-venue-muted {
-    font-weight: 600;
-    color: var(--muted);
 }
 
 .pub-links {
@@ -409,8 +400,8 @@ p {
     }
 
     .about-photo {
-        width: 132px;
-        height: 132px;
+        width: 120px;
+        height: 120px;
         margin: 0 auto;
     }
 
