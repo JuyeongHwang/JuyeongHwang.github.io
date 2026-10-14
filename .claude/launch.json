@@ -6,6 +6,12 @@
             "runtimeExecutable": "python3",
             "runtimeArgs": ["-m", "http.server", "4173"],
             "port": 4173
+        },
+        {
+            "name": "tensorboard-mp-rl",
+            "runtimeExecutable": "/Users/dama.gochi/miniforge3/envs/ros2/bin/tensorboard",
+            "runtimeArgs": ["--logdir", "/Users/dama.gochi/Documents/Closed-Loop Simulator/runs", "--port", "6006", "--reload_interval", "15"],
+            "port": 6006
         }
     ]
 }
